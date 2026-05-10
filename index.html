@@ -1,1623 +1,448 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"�l�r ����";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:"Yu Gothic";
-	panose-1:2 11 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"\@�l�r ����";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:"\@���S�V�b�N";
-	panose-1:2 11 4 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0mm;
-	margin-right:0mm;
-	margin-bottom:10.0pt;
-	margin-left:0mm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	color:black;}
-p.MsoCaption, li.MsoCaption, div.MsoCaption
-	{margin-top:0mm;
-	margin-right:0mm;
-	margin-bottom:10.0pt;
-	margin-left:0mm;
-	line-height:115%;
-	font-size:10.5pt;
-	font-family:"Times New Roman",serif;
-	color:black;
-	font-weight:bold;}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-.MsoChpDefault
-	{font-size:12.0pt;
-	color:black;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.45pt 841.7pt;
-	margin:36.0pt 67.7pt 54.0pt 72.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0mm;}
-ul
-	{margin-bottom:0mm;}
--->
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>東京案内書</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    max-width: 920px;
+    margin: auto;
+    padding: 60px 24px;
+    line-height: 2.1;
+    font-size: 18px;
+    background: #f7f7f7;
+    color: #222;
+    font-family: 'Noto Serif JP', serif;
+}
+
+h1{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+h2{
+    margin-top:70px;
+    margin-bottom:25px;
+    padding-bottom:10px;
+    border-bottom:2px solid #222;
+    font-size:30px;
+}
+
+h3{
+    margin-top:40px;
+    font-size:24px;
+}
+
+.center{
+    text-align:center;
+    color:#666;
+}
+
+.section{
+    background:white;
+    padding:40px;
+    margin-top:40px;
+    border-radius:18px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+p{
+    margin-bottom:24px;
+    text-align:justify;
+}
+
+ol{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:14px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+    margin-bottom:25px;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+th{
+    background:#222;
+    color:white;
+    padding:14px;
+    text-align:left;
+    font-weight:700;
+}
+
+td{
+    background:#fff;
+    padding:14px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:last-child td{
+    border-bottom:none;
+}
+
+img{
+    width:100%;
+    border-radius:16px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:60px 0;
+}
+
+a{
+    color:#005bbb;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@media screen and (max-width:768px){
+
+body{
+    padding:25px 14px;
+    font-size:16px;
+}
+
+h1{
+    font-size:34px;
+}
+
+h2{
+    font-size:24px;
+}
+
+.section{
+    padding:24px;
+}
+
+table{
+    font-size:14px;
+}
+
+}
+
+</style>
 </head>
 
-<body lang=JA link=blue vlink=purple style='word-wrap:break-word'>
+<body>
 
-<div class=WordSection1>
+<h1>東京案内書</h1>
 
-<p class=MsoNormal><span style='position:relative;z-index:-1895825368'><span
-style='position:absolute;left:-112px;top:-78px;width:993px;height:1401px'><img
-width=794 height=1121 src="index_files/image001.png"></span></span><span
-style='position:relative;z-index:251658240'><span style='position:absolute;
-left:558px;top:-10px;width:231px;height:231px'><img width=185 height=185
-src="index_files/image002.png"></span></span></p>
-
-<p class=MsoNormal align=center style='margin-right:4.3pt;text-align:center'><b><span
-style='font-size:28.0pt;line-height:115%;font-family:"�l�r ����",serif;color:white'>�����ē���</span></b></p>
-
-<p class=MsoNormal style='text-align:justify;text-justify:distribute-all-lines'><b><span
-lang=EN-US style='font-family:"�l�r ����",serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=right style='text-align:right;line-height:normal'><a
-name="_Hlk115694964"><b><span lang=EN-US style='font-size:20.0pt'>&nbsp;</span></b></a></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:12.0pt'><b><span
-lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif;color:white'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:12.0pt'><b><span
-lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif;color:white'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:12.0pt'><b><span
-lang=VI style='font-family:"�l�r ����",serif;color:white'>202</span></b><b><span
-lang=EN-US style='font-family:"�l�r ����",serif;color:white'>6</span></b><b><span
-style='font-family:"�l�r ����",serif;color:white'>�N</span></b><b><span lang=EN-US
-style='font-family:"�l�r ����",serif;color:white'>5</span></b><b><span
-style='font-family:"�l�r ����",serif;color:white'>��</span></b><b><span lang=EN-US
-style='font-family:"Calibri",sans-serif;color:white'>09</span></b><b><span
-style='font-family:"�l�r ����",serif;color:white'>��</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:12.0pt'><b><span
-lang=VI style='font-family:"�l�r ����",serif;color:white'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-style='font-family:"�l�r ����",serif;color:white'>�����F</span></b><b><span
-style='font-family:"�l�r ����",serif;color:white'>�O�G���E�`�����E�q�G��</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif;color:white'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif;color:white'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<b><span lang=VI style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif;color:windowtext'>�y�v��E�\���āz</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-family:"Calibri",sans-serif;
-color:windowtext'>1. </span></b><b><span style='font-family:"�l�r ����",serif;
-color:windowtext'>���ӂ̌��t</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif;color:windowtext'>��ւ̎ӎ��ƁA���̑S�̓I�Ȋ��z�B</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-family:"Calibri",sans-serif;
-color:windowtext'>2. </span></b><b><span style='font-family:"�l�r ����",serif;
-color:windowtext'>���̃n�C���C�g�i</span></b><b><span lang=EN-US style='font-family:
-"Calibri",sans-serif;color:windowtext'>3</span></b><b><span style='font-family:
-"�l�r ����",serif;color:windowtext'>���Ԃ̃|�C���g�j</span></b></p>
-
-<ul style='margin-top:0mm' type=disc>
- <li class=MsoNormal style='color:windowtext'><b><span lang=EN-US
-     style='font-family:"Calibri",sans-serif'>1</span></b><b><span
-     style='font-family:"�l�r ����",serif'>���ځF�`���̐�</span></b></li>
- <ul style='margin-top:0mm' type=circle>
-  <li class=MsoNormal style='color:windowtext'><b><span style='font-family:
-      "�l�r ����",serif'>�s��̌����𗣂�A���{�̓`�������i�󑐎��○��j�ɐG�ꂽ�̌��B</span></b></li>
- </ul>
- <li class=MsoNormal style='color:windowtext'><b><span lang=EN-US
-     style='font-family:"Calibri",sans-serif'>2</span></b><b><span
-     style='font-family:"�l�r ����",serif'>���ځF����̐V�h</span></b></li>
- <ul style='margin-top:0mm' type=circle>
-  <li class=MsoNormal style='color:windowtext'><b><span style='font-family:
-      "�l�r ����",serif'>�s������̐�i��V�h�䉑�̎��R�ȂǁA��s��̃_�C�i�~�Y���������B</span></b></li>
- </ul>
- <li class=MsoNormal style='color:windowtext'><b><span lang=EN-US
-     style='font-family:"Calibri",sans-serif'>3</span></b><b><span
-     style='font-family:"�l�r ����",serif'>���ځF�����ƍŐ�[�i�R�E�ԍ�E�H�t���j</span></b></li>
- <ul style='margin-top:0mm' type=circle>
-  <li class=MsoNormal style='color:windowtext'><b><span style='font-family:
-      "�l�r ����",serif'>�R�̗����������X���݂ł̃R�[�q�[�^�C����A�H�t���̌��㕶���̑̌��B</span></b></li>
- </ul>
-</ul>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-family:"Calibri",sans-serif;
-color:windowtext'>3. </span></b><b><span style='font-family:"�l�r ����",serif;
-color:windowtext'>���т̌��t</span></b></p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0mm 0mm 1.0pt 0mm'>
-
-<p class=MsoNormal style='border:none;padding:0mm'><b><span style='font-family:
-"�l�r ����",serif;color:windowtext'>���̌o��������̗Ƃɂ��A����ɓ��{�ł̐�����w�тɗ�݂����Ƃ������ӁB</span></b></p>
-
+<div class="center">
+<p>2026年5月09日</p>
+<p>氏名：グエン・チョン・ヒエン</p>
 </div>
 
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif;color:windowtext'>����</span></b></p>
+<hr>
 
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif;color:windowtext'>�܂����߂ɁA���̓x�͓������ό�����M�d�ȋ@������������܂�����ɁA�S��芴�Ӑ\���グ�܂��B</span></b></p>
+<div class="section">
+<h2>【要約・構成案】</h2>
 
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif;color:windowtext'>����</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif;color:windowtext'>3</span></b><b><span
-style='font-family:"�l�r ����",serif;color:windowtext'>���Ԃ̗��́A���ɂƂ��Ĕ��Ɏv���o�[���A�����ĖY��邱�Ƃ̂ł��Ȃ���؂Ȍo���ƂȂ�܂����B</span></b></p>
+<ol>
+<li>感謝の言葉</li>
+<li>旅のハイライト</li>
+<li>結びの言葉</li>
+</ol>
+</div>
 
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif;color:windowtext'>���͂��̑f���炵���v���o�����ɍ��݁A���ꂩ��̓��{�ł̐�����d���̗Ƃɂ��Ă܂��肽���Ǝv���܂��B</span></b></p>
+<div class="section">
+<h2>感謝</h2>
 
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif;color:windowtext'>�܂��A����̗���ʂ��āA�����̗L���ȏꏊ��K��邾���łȂ��A���{�̕�����l�X�A�����ĊX�̕��͋C�����ۂɔ��Ŋ����邱�Ƃ��ł��܂����B</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif;color:windowtext'><br>
-</span></b><b><span style='font-family:"�l�r ����",serif;color:windowtext'>���̌o���́A���{�Ő����������Ă������ŁA�����g������ɐ��������Ă����M�d�ȍ��Y�ɂȂ�Ɗ����Ă��܂��B</span></b></p>
-
-<b><span lang=VI style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
-lang=EN-US style='font-size:36.0pt;font-family:"Calibri",sans-serif'>1</span><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>���ځF</span></b><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>��</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>�i</span></b><span
-lang=EN-US style='font-size:36.0pt;font-family:"Calibri",sans-serif'>5</span><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>��</span></b><span
-lang=EN-US style='font-size:36.0pt;font-family:"Calibri",sans-serif'>5</span><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>���j</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=608 height=456
-src="index_files/image003.jpg" align=left hspace=12
-alt="CUNG &#272;&#431;&#7900;NG V&Agrave;NG NH&#7852;T B&#7842;N 2024 Bay h&agrave;ng kh&ocirc;ng Vietjet Air | Ho&agrave;ng Vi&#7879;t ..."><b><span
-style='font-size:14.0pt;font-family:"�l�r ����",serif'>�����́A���{�̓`���I�ȕ���F�Z���c��X�A�󑐂�K��܂����B</span></b><b><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-style='font-size:14.0pt;font-family:"�l�r ����",serif'>�s��̌������痣�ꂽ���̏ꏊ�ł́A�܂�Ŏ��Ԃ��������Ɨ���Ă��邩�̂悤�ȉ��₩�ȋ�C�������邱�Ƃ��ł��܂����B�����󑐂ɋ����䂩�ꂽ���R�́A�Â��ǂ����{�̕����𔧂Ŋ�������_�ɂ���܂��B���̑̌���ʂ��āA���{�̗��j�̐[�����Ĕ������邱�Ƃ��ł��܂���</span></b><b><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-style='font-size:16.0pt;font-family:"�l�r ����",serif'>�B</span></b></p>
-
-<b><span lang=VI style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif'>������</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%;
-font-family:"�l�r ����",serif'>�o������O�ɁA���͒��H���Ƃ邽�߂Ɂu�������v�ɗ������܂����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%;
-font-family:"�l�r ����",serif'>�����ŁA�̂Ȃ���̃��[�������L�q�𒍕����܂����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%;
-font-family:"�l�r ����",serif'>���������[�����ƍ��΂����L�q�͂ƂĂ����������A���ꂩ��n�܂闷�ւ̊��҂�����ɍ��߂Ă���܂����B</span></b></p>
-
-<p class=MsoNormal style='page-break-after:avoid'><span lang=EN-US><img
-width=578 height=136 src="index_files/image004.jpg"
-alt="Ramen Hidakaya Akihabara Chuo-dori - Ramen in Akihabara | Tokyo Cheapo"></span></p>
-
-<p class=MsoCaption style='margin-left:180.0pt'><img width=264 height=249
-src="index_files/image005.jpg" align=left hspace=12><span style='font-size:
-14.0pt;line-height:115%;font-family:"�l�r ����",serif'>������</span></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'><img width=264 height=258 id="Picture 1"
-src="index_files/image006.jpg"></span></b><span lang=VI>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
-115%;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<table class=MsoTable15Grid4Accent3 border=1 cellspacing=0 cellpadding=0
- align=left style='border-collapse:collapse;border:none;margin-left:4.85pt;
- margin-right:4.85pt'>
- <tr>
-  <td width=607 colspan=2 valign=top style='width:455.25pt;border:solid #9BBB59 1.0pt;
-  background:#9BBB59;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-size:16.0pt;font-family:"�l�r ����",serif;
-  color:white'>�y�T�v�z</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #C2D69B 1.0pt;
-  border-top:none;background:#EAF1DD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #C2D69B 1.0pt;border-right:solid #C2D69B 1.0pt;
-  background:#EAF1DD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>���؂���</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�{</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�L�q</span></b><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>6</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>��</span></b><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'> + </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�h���S���`�L��</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #C2D69B 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #C2D69B 1.0pt;border-right:solid #C2D69B 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>1430</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�~</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #C2D69B 1.0pt;
-  border-top:none;background:#EAF1DD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�ꏊ</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #C2D69B 1.0pt;border-right:solid #C2D69B 1.0pt;
-  background:#EAF1DD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>������</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>��ג��X</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #C2D69B 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Z��</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #C2D69B 1.0pt;border-right:solid #C2D69B 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�����s�䓌�擌���</span></b><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>1</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>3</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Ԓn</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #C2D69B 1.0pt;
-  border-top:none;background:#EAF1DD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Google</span></b><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'> map</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #C2D69B 1.0pt;border-right:solid #C2D69B 1.0pt;
-  background:#EAF1DD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US><a href="https://maps.app.goo.gl/XY5M7yhE81P3YrFt5"><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/XY5M7yhE81P3YrFt5</span></b></a></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
-115%;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span lang=VI
-style='font-size:16.0pt;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=307 height=230
-src="index_files/image007.jpg" align=right hspace=12><img width=258 height=382
-src="index_files/image008.jpg" align=left hspace=12><b><span style='font-size:
-14.0pt;font-family:"�l�r ����",serif'>�����I�Ɋό����邽�߁A�������g����</span></b><b><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif'>700</span></b><b><span
-style='font-size:14.0pt;font-family:"�l�r ����",serif'>�~�����Ԍ����w�����܂����B</span></b><b><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif'>PASMO</span></b><b><span
-style='font-size:14.0pt;font-family:"�l�r ����",serif'>�����p�ł��Ȃ��������ߎ��̐ؕ���I�т܂������A���ʂƂ��ăX���[�Y�Ɉړ��ł��܂����B�󑐉w������͈ē��}�Ń��[�g���m�F���A�ŏ��̖ړI�n�ł���󑐎��֌������܂����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt;
-font-family:"�l�r ����",serif'>�󑐎��֌������r���A</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt;
-font-family:"�l�r ����",serif'>���͊ω��ʂ��ʂ�܂����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=314 height=256
-src="index_files/image009.jpg" align=left hspace=12><b><span style='font-size:
-14.0pt;font-family:"�l�r ����",serif'>�����ɓ������u�Ԃ���A�`���I�Ȓ񓔂�ό��q�A�n���̐l�X�œ��키���͋C���L�����Ă���A�ƂĂ��󑐂炵���i�F�������邱�Ƃ��ł��܂����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt;
-font-family:"�l�r ����",serif'>�ʂ�̗����ɂ́A���H�X�₨�y�Y���A�����ē��{�̓`���I�ȕ��͋C����������X������������ł��܂����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt;
-font-family:"�l�r ����",serif'>�����̐l�œ�����Ă��܂������A�������S���̋ߑ�I�ŖZ�������͋C�Ƃ͈Ⴂ�A�ǂ����������e���݂₷����C�������܂����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=325 height=243
-src="index_files/image010.jpg" align=left hspace=12></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-size:14.0pt;
-font-family:"�l�r ����",serif'>���͂̌i�F�𒭂߂Ȃ�������Ă���ƁA�������{���ɓ��{�̓`�������̒��ɗn������ł���悤�ȋC�����ɂȂ�܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=330 height=183 src="index_files/image011.jpg"
-align=left hspace=12><b><span style='font-size:14.0pt;line-height:115%;
-font-family:"�l�r ����",serif'>���ӂ��U�􂵂���A���͐󑐂��\���闋��֌������܂����B</span></b><b><span
-lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Calibri",sans-serif'><br>
-</span></b><b><span style='font-size:14.0pt;line-height:115%;font-family:"�l�r ����",serif'>�傫�ȐԂ��񓔂Ƒ����̊ό��q�œ��키�i�F�́A�ƂĂ��󑐂炵�����C���镵�͋C�����������܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
-115%;font-family:"Calibri",sans-serif'>Google Maps: </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/5bVd54WFoJPpj8XNA"><b><span
-style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/5bVd54WFoJPpj8XNA</span></b></a></span></p>
-
-<b><span lang=EN-US style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
-115%;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=363 height=272 src="index_files/image012.jpg"
-align=left hspace=12><b><span style='font-size:16.0pt;line-height:115%;
-font-family:"�l�r ����",serif'>�󑐂ɓ�����A�܂��͉w�O�̈ē��}�Ŏ��ӃX�|�b�g���m�F���܂����B���i�g���X�}�z�A�v���ł͂Ȃ��A���ۂ̒n�}�����邱�ƂŊό��C���������������܂�܂����B�����ĖK�ꂽ�u�󑐎��v�ł́A���j���錚�z�̔������ƁA���킢�̒��ɂ��錵���ȕ��͋C�ɐ[���������󂯂܂����B�B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-size:16.0pt;
-font-family:"�l�r ����",serif'>�����āA�󑐂��\����`���I�Ȗ����̈�ł���󑐎��̎ʐ^�����Љ�܂��B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=330 height=257
-src="index_files/image013.jpg" align=left hspace=12><b><span style='font-size:
-16.0pt;font-family:"�l�r ����",serif'>���j��������������������z�����łȂ��A���₩�ȓ����̒��ł����������ƌ����ȕ��͋C����������ꏊ�ł����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=302 height=259
-src="index_files/image014.jpg" align=left hspace=12><b><span lang=EN-US
-style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Google Map : </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/kbonv4pSFQ4YQUdR7"><b><span
-style='font-size:16.0pt;font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/kbonv4pSFQ4YQUdR7</span></b></a></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><img width=274 height=190 src="index_files/image015.jpg"
-align=left hspace=12><img width=253 height=190 src="index_files/image016.jpg"
-align=left hspace=12><span lang=EN-US style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'><br>
-<br>
-</span></p>
-
-<p class=MsoNormal><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><img width=213 height=298 src="index_files/image017.jpg"
-align=left hspace=12></p>
-
-<p class=MsoNormal><img width=98 height=131 src="index_files/image018.jpg"
-align=left hspace=12><span style='font-size:16.0pt;line-height:115%;font-family:
-"�l�r ����",serif'>�l�͎Ԃ̎p�����āA���͐̂̓��{�̕��i���v�������ׂ܂����B����I�ȓ����̒��ł��A�l�͎Ԃ̑��݂͐󑐂̓`���I�ŗ��j���镵�͋C����苭�����������Ă���܂����B</span>
+<p>
+まず初めに、この度は東京を観光する貴重な機会をくださいました会長に、心より感謝申し上げます。
 </p>
 
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>���������ł��݂����������Ă݂܂����B</span></b></p>
+<p>
+この3日間の旅は、私にとって非常に思い出深く、決して忘れることのできない大切な経験となりました。
+</p>
 
-<p class=MsoNormal><b><span lang=EN-US>100</span></b><b><span style='font-family:
-"�l�r ����",serif'>�~�����Ă��݂������������Ƃ���A���ʂ͋��ł����B</span></b></p>
+<p>
+私はこの素晴らしい思い出を胸に刻み、これからの日本での生活や仕事の糧にしてまいりたいと思います。
+</p>
 
-<p class=MsoNormal style='margin-left:36.0pt'><b><span style='font-family:"�l�r ����",serif'>�l�͎�</span></b></p>
+<p>
+また、今回の旅を通して、東京の有名な場所を訪れるだけでなく、日本の文化や人々、そして街の雰囲気を実際に肌で感じることができました。
+</p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0mm 0mm 1.0pt 0mm;
-margin-left:36.0pt;margin-right:0mm'>
+<p>
+この経験は、日本で生活し働いていく中で、私自身をさらに成長させてくれる貴重な財産になると感じています。
+</p>
+</div>
 
-<p class=MsoNormal style='text-indent:36.0pt;border:none;padding:0mm'><span
-lang=EN-US>Google Map: <a href="https://maps.app.goo.gl/nUaTDnSuyvmCk3oBA">https://maps.app.goo.gl/nUaTDnSuyvmCk3oBA</a></span></p>
+<div class="section">
+<h2>1日目：浅草（5月5日）</h2>
+
+<p>
+初日は、日本の伝統的な風情が色濃く残る街、浅草を訪れました。
+都会の喧騒から離れたこの場所では、まるで時間がゆっくりと流れているかのような穏やかな空気を感じることができました。
+</p>
+
+<p>
+私が浅草に強く惹かれた理由は、古き良き日本の文化を肌で感じられる点にあります。
+この体験を通じて、日本の歴史の深さを再発見することができました。
+</p>
+
+<h3>昼ご飯</h3>
+
+<p>
+出発する前に、私は昼食をとるために「日高屋」に立ち寄りました。
+そこで、昔ながらのラーメンと餃子を注文しました。
+</p>
+
+<p>
+温かいラーメンと香ばしい餃子はとても美味しく、これから始まる旅への期待をさらに高めてくれました。
+</p>
+
+<table>
+<tr>
+<th>料理</th>
+<td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
+</tr>
+
+<tr>
+<th>料金</th>
+<td>1430円</td>
+</tr>
+
+<tr>
+<th>場所</th>
+<td>日高屋 稲荷町店</td>
+</tr>
+</table>
+
+<p>
+効率的に観光するため、東京メトロの700円一日乗車券を購入しました。
+</p>
+
+<p>
+浅草寺へ向かう途中、観音通りを通りました。
+伝統的な提灯や観光客で賑わう景色がとても印象的でした。
+</p>
+
+<p>
+周囲の景色を眺めながら歩いていると、自分が本当に日本の伝統文化の中に溶け込んでいるような気持ちになりました。
+</p>
+
+<p>
+周辺を散策した後、私は浅草を代表する雷門へ向かいました。
+大きな赤い提灯と多くの観光客で賑わう景色は、とても浅草らしい活気ある雰囲気を感じさせました。
+</p>
+
+<p>
+続いて訪れた「浅草寺」では、歴史ある建築の美しさと、賑わいの中にある厳かな雰囲気に深い感銘を受けました。
+</p>
+
+<p>
+人力車の姿を見て、私は昔の日本の風景を思い浮かべました。
+現代的な東京の中でも、人力車の存在は浅草の伝統的で歴史ある雰囲気をより強く感じさせてくれました。
+</p>
+
+<p>
+私はお寺でおみくじを引いてみました。
+100円を入れておみくじを引いたところ、結果は凶でした。
+</p>
+
+<p>
+私はお店でたこ焼きを作る様子を見ることができました。
+熱々のたこ焼きが手際よく丸く焼き上げられていく様子は、とても印象的でした。
+</p>
+
+<h3>晩ご飯</h3>
+
+<p>
+一蘭での体験は、外国人観光客やあまり会話が得意ではない人にとって、とても素晴らしいものだと感じました。
+</p>
+
+<p>
+食券機で注文をして、席に座り、料理が来るのを待つだけなので、とても簡単で便利でした。
+</p>
+
+<table>
+<tr>
+<th>料理</th>
+<td>一蘭5選 + 抹茶アーモンドプリン</td>
+</tr>
+
+<tr>
+<th>料金</th>
+<td>2580円</td>
+</tr>
+
+<tr>
+<th>場所</th>
+<td>ICHIRAN Ueno</td>
+</tr>
+</table>
 
 </div>
 
-<p class=MsoNormal><img width=186 height=182 src="index_files/image019.jpg"
-align=left hspace=12><img width=169 height=179 src="index_files/image020.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>���͂��X�ł����Ă������l�q�����邱�Ƃ��ł��܂����B</span><span
-lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�M�X�̂����Ă�����ۂ悭�ۂ��Ă��グ���Ă����l�q�́A�ƂĂ���ۓI�ł����B</span></b></p>
-
-<p class=MsoNormal><img width=181 height=175 src="index_files/image021.jpg"
-align=left hspace=12><img width=166 height=178 src="index_files/image022.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>�o���オ���������Ă����Y��ȏĂ��F�ŁA�ƂĂ������������Ɍ����A���{�̉��䕶���̖��͂����������܂����B</span></b></p>
-
-<p class=MsoNormal><img width=310 height=29 src="index_files/image023.png"
-align=left hspace=12 alt="�����Ă���1�p�b�N��700�~�ł��B"><span lang=EN-US><br clear=all
-style='page-break-before:always'>
-</span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><img width=367
-height=246 src="index_files/image024.jpg" align=left hspace=12
-alt="�ꗖ �A�g�����R�����X �i�������j - �������/���[���� | �H�׃��O"><b><span style='font-size:36.0pt;
-line-height:115%;font-family:"�l�r ����",serif'>�ӂ���</span></b></p>
-
-<p class=MsoNormal><img width=198 height=282 src="index_files/image025.png"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>�ꗖ�ł̑̌��́A�O���l�ό��q�₠�܂��b�����ӂł͂Ȃ��l�ɂƂ��āA�ƂĂ��f���炵�����̂��Ɗ����܂����B</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif'><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�H���@�Œ��������āA�Ȃɍ���A����������̂�҂����Ȃ̂ŁA�ƂĂ��ȒP�ŕ֗��ł����B</span></b></p>
-
-<table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
- align=left style='border-collapse:collapse;border:none;margin-left:4.85pt;
- margin-right:4.85pt'>
- <tr>
-  <td width=567 colspan=2 valign=top style='width:425.0pt;border:solid #4F81BD 1.0pt;
-  background:#4F81BD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-size:16.0pt;font-family:"�l�r ����",serif;
-  color:white'>�y�T�v�z</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=77 valign=top style='width:57.8pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=490 valign=top style='width:367.2pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-family:"�l�r ����",serif'>�ꗖ</span></b><b><span
-  lang=EN-US style='font-family:"Calibri",sans-serif'>5</span></b><b><span
-  style='font-family:"�l�r ����",serif'>�I</span></b><b><span lang=EN-US
-  style='font-family:"Calibri",sans-serif'> - Ichiran Gosen + </span></b><b><span
-  style='font-family:"�l�r ����",serif'>�������</span></b><b><span lang=EN-US
-  style='font-family:"Calibri",sans-serif'> +</span></b></p>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-family:"�l�r ����",serif'>�����A�[�����h�v����</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=77 valign=top style='width:57.8pt;border:solid #95B3D7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=490 valign=top style='width:367.2pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span lang=EN-US style='font-family:"Calibri",sans-serif'>2580</span></b><b><span
-  style='font-family:"�l�r ����",serif'>�~</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=77 valign=top style='width:57.8pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span></b></p>
-  </td>
-  <td width=490 valign=top style='width:367.2pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><span lang=EN-US style='font-family:"Calibri",sans-serif'>ICHIRAN
-  Ueno (Atre)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=77 valign=top style='width:57.8pt;border:solid #95B3D7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-family:"�l�r ����",serif'>�Z��</span></b></p>
-  </td>
-  <td width=490 valign=top style='width:367.2pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><span lang=VI style='font-family:"Calibri",sans-serif'>7
-  Chome-1-1 Ueno, Taito City, Tokyo 110-0005</span></p>
-  </td>
- </tr>
- <tr style='height:28.7pt'>
-  <td width=77 valign=top style='width:57.8pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt;height:28.7pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span lang=VI style='font-family:"Calibri",sans-serif'>Google
-  Map</span></b></p>
-  </td>
-  <td width=490 valign=top style='width:367.2pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt;height:28.7pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><span lang=EN-US><a
-  href="https://maps.app.goo.gl/bEh8bDstg4Whn58R9"><span lang=VI
-  style='font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/bEh8bDstg4Whn58R9</span></a></span></p>
-  </td>
- </tr>
-</table>
-
-<b><span lang=VI style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=275 height=206 src="index_files/image026.jpg"
-align=left hspace=12></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>���̃V���v���Ńv���C�x�[�g�ȃX�^�C���́A�ƂĂ����K�Ŗʔ����̌��ł����B</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span lang=VI
-style='font-size:16.0pt;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span lang=VI
-style='font-size:16.0pt;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><img width=360 height=270
-src="index_files/image027.jpg" align=left hspace=12></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span lang=VI
-style='font-size:16.0pt;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal style='line-height:normal'><b><span style='font-family:"�l�r ����",serif'>�H�������Ă���Ԃ��A�قƂ�ǈ�l�����̋�ԂɂȂ��Ă��āA����̎������C�ɂ���K�v������܂���ł����B</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif'><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>���̂������ŁA�ƂĂ������������C�����ŐH���ɏW�����邱�Ƃ��ł��܂����B</span></b></p>
-
-<p class=MsoNormal><span lang=VI>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=VI>&nbsp;</span></p>
-
-<p class=MsoNormal><img width=267 height=357 src="index_files/image028.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>�H��ɂ́A�f�U�[�g�Ƃ��ăv�������H�ׂĂ݂܂����B</span><span
-lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�قǂ悢�Â��ƂȂ߂炩�ȐH�����ƂĂ����������A�ꗖ�ł̗[�H����߂�����̂ɂ҂�����ł���</span></b><b><span
-style='font-size:16.0pt;line-height:115%;font-family:"�l�r ����",serif'>�B</span></b></p>
-
-<span lang=VI style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><br
-clear=all style='page-break-before:always'>
-</span>
-
-<p class=MsoNormal><span lang=VI>&nbsp;</span></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
-lang=VI style='font-size:36.0pt;font-family:"Calibri",sans-serif'>2</span><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>���ځF�V�h</span><span lang=VI
-style='font-size:36.0pt;font-family:"Calibri",sans-serif'> + </span><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>�a�J</span></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>�i</span><span lang=VI
-style='font-size:36.0pt;font-family:"Calibri",sans-serif'>5</span><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>��</span><span lang=VI
-style='font-size:36.0pt;font-family:"Calibri",sans-serif'>6</span><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>���j</span></p>
-
-<p class=MsoNormal><span lang=VI>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span lang=VI>2</span></b><b><span style='font-family:
-"�l�r ����",serif'>���ځA���͐V�h�Əa�J��K��܂����B</span></b></p>
-
-<p class=MsoNormal><img width=333 height=237 src="index_files/image029.jpg"
-align=left hspace=12><img width=318 height=234 src="index_files/image030.jpg"
-align=left hspace=12
-alt="A Must-Visit Spot in Shinjuku! Discover Hanazono Shrine, the Guardian ..."><b><span
-style='font-family:"�l�r ����",serif'>�󑐂̓`���I�ȕ��͋C�Ƃ͈قȂ�A�����ł͍��w�r���⋐��ȍL�����j�^�[�A�����̐l�X�ň��铌���炵������I�Ȍi�F�������邱�Ƃ��ł��܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=408 height=342 src="index_files/image031.png"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>���́A�Ƃ̋߂��ɂ���}���G�c�Œ��H�p�̂��ٓ��𔃂��܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�����I�񂾂̂̓����`�J�c�ٓ��ŁA�T�N�T�N�����߂ƃW���[�V�[�Ȃ������ƂĂ��������������ł��B</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI>&nbsp;</span></b></p>
-
-<p class=MsoNormal><span lang=VI>&nbsp;</span></p>
-
-<span lang=VI style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><br
-clear=all style='page-break-before:always'>
-</span>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><img width=367 height=283 src="index_files/image032.jpg"
-align=right hspace=12><b><span style='font-family:"�l�r ����",serif'>���̌�A���͏a�J�w�֌������A���̗L���ȊX�̎U����n�߂܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�w���o���u�ԁA�����̐l�X�⋐��ȍL�����j�^�[���ڂɓ���A�����̓��₩���Ɉ��|����܂����B</span></b></p>
-
-<p class=MsoNormal><img width=207 height=271 src="index_files/image033.jpg"
-align=left hspace=12><b><span lang=EN-US>Google Maps: </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/aqXXJfa3XpzdG1ja8"><b>https://maps.app.goo.gl/aqXXJfa3XpzdG1ja8</b></a></span></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�a�J�ōŏ��ɖK�ꂽ�ꏊ�̈�́A�L���ȃn�`�����ł����B</span></b></p>
-
-<p class=MsoNormal><span lang=EN-US><br>
-</span><b><span style='font-family:"�l�r ����",serif'>�n�`���̒����S�Ɋւ���b��m���Ă����̂ŁA���̏ꏊ�͒P�Ȃ�ό��n�ł͂Ȃ��A�ƂĂ����ʂȈӖ������ꏊ���Ɗ����܂����B</span></b></p>
-
-<p class=MsoNormal><img width=207 height=260 src="index_files/image034.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>���͋L�O�Ƃ��āA�n�`�����𐳖ʂƉ��̗�������B�e���܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�ǂ̊p�x���猩�Ă����ʂȕ��͋C������A�n�`���̗L���Ȓ����S�̕�����v���o�����Ă���鑜�ł����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span><span
-lang=EN-US>: 2 Chome-1 Dogenzaka, Shibuya, Tokyo 150-0043</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI>Google Maps:</span></b></p>
-
-<p class=MsoNormal><span lang=EN-US><a
-href="https://maps.app.goo.gl/rKDKFVo9gf2xGjFs9"><b><span lang=VI>https://maps.app.goo.gl/rKDKFVo9gf2xGjFs9</span></b></a></span></p>
-
-<b><span lang=VI style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=284 height=231 src="index_files/image035.jpg"
-align=left hspace=12></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>���͏a�J�q�J���G���牽�����ʐ^���B��܂����B</span><span
-lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�ォ�璭�߂铌���̊X���݂⑽���̐l�X�̎p����A�����̋ߑ�I�Ŋ��C���镵�͋C����苭�������邱�Ƃ��ł��܂����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ�F</span><span
-lang=EN-US>2 Chome-21-1 Shibuya, Tokyo 150-8510</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=354 height=336 src="index_files/image036.jpg"
-align=left hspace=12><img width=235 height=161 src="index_files/image037.jpg"
-align=left hspace=12><img width=240 height=162 src="index_files/image038.jpg"
-align=left hspace=12><b><span lang=EN-US>Google Maps: </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/MQmHyGHh9AmJf6D88"><b>https://maps.app.goo.gl/MQmHyGHh9AmJf6D88</b></a></span></p>
-
-<p class=MsoNormal><img width=342 height=256 src="index_files/image039.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>�a�J���U�􂵂���A���͕��s�S���i</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif'>F</span></b><b><span
-style='font-family:"�l�r ����",serif'>�j�𗘗p���ĐV�h�֌������܂����B</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif'><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�����̓d�ԘH���͂ƂĂ����G�ł����A�L���ȃG���A���m�̈ړ��͕֗��ŁA�ƂĂ��X���[�Y�ł���</span></b><b><span
-style='font-size:16.0pt;line-height:115%;font-family:"�l�r ����",serif'>�B</span></b></p>
-
-<b><span lang=VI style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI>&nbsp;</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center'><img width=356
-height=270 src="index_files/image040.jpg" align=left hspace=12><img width=343
-height=266 src="index_files/image041.jpg" align=left hspace=12><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif'>�V�h</span></b><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif'>��</span></b><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif'>�O�єL</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'>&nbsp;</span></b><b><span lang=VI
-style='font-family:"Calibri",sans-serif'>Google maps: </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/5cZNA7whZbh9pbQH9"><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/5cZNA7whZbh9pbQH9</span></b></a></span></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span></b><b><span
-lang=VI style='font-family:"Calibri",sans-serif'>: </span></b><b><span
-style='font-family:"�l�r ����",serif'>��</span></b><b><span lang=VI
-style='font-family:"Calibri",sans-serif'>160-0022 Tokyo, Shinjuku City,
-Shinjuku, 3 Chome&#8722;23&#8722;18 </span></b><b><span style='font-family:"�l�r ����",serif'>�N���X</span></b><b><span
-style='font-family:"�l�r ����",serif'>�V�h</span></b><b><span style='font-family:
-"�l�r ����",serif'>�r��</span></b><b><span lang=VI style='font-family:"Calibri",sans-serif'>
-1F - 3F</span></b></p>
-
-<table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
- align=left style='border-collapse:collapse;border:none;margin-left:4.85pt;
- margin-right:4.85pt'>
- <tr>
-  <td width=607 colspan=2 valign=top style='width:455.25pt;border:solid #4F81BD 1.0pt;
-  background:#4F81BD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-size:16.0pt;font-family:"�l�r ����",serif;
-  color:white'>�y�T�v�z</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>���؂���</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�{</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Ă�����</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #95B3D7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>800</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�~</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�ꏊ</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>������</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>��ג��X</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #95B3D7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Z��</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�����s�䓌�擌���</span></b><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>1</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>3</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Ԓn</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Google</span></b><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'> maps</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US><a href="https://maps.app.goo.gl/XY5M7yhE81P3YrFt5"><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/XY5M7yhE81P3YrFt5</span></b></a></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><img width=293 height=220 src="index_files/image042.jpg"
-align=left hspace=12><b><span lang=VI style='font-size:36.0pt;line-height:115%;
-font-family:"Calibri",sans-serif'><br clear=all style='page-break-before:always'>
-</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-lang=VI style='font-size:36.0pt;font-family:"Calibri",sans-serif'>3</span></b><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>���ځF�R�꒚�ځA</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
-style='font-size:36.0pt;font-family:"�l�r ����",serif'>�H�t���A</span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
-width=310 height=174 src="index_files/image043.jpg" align=left hspace=12
-alt="Akiba Night Wallpapers on WallpaperDog"><b><span style='font-size:36.0pt;
-font-family:"�l�r ����",serif'>�i</span></b><span lang=EN-US style='font-size:36.0pt;
-font-family:"Calibri",sans-serif'>5</span><b><span style='font-size:36.0pt;
-font-family:"�l�r ����",serif'>��</span></b><span lang=EN-US style='font-size:36.0pt;
-font-family:"Calibri",sans-serif'>7</span><b><span style='font-size:36.0pt;
-font-family:"�l�r ����",serif'>���j</span></b></p>
-
-<p class=MsoNormal><img width=355 height=266 src="index_files/image044.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>�ŏI���́A��̈قȂ��̊X��K��܂����B���C���ӂ��u�H�t���v�ł́A�l�I����L�������ԓ��{�̌��㕶���i�A�j���E�d�C�X�j��̊����܂����B����Łu�R�꒚�ځv�́A�������ꂽ�I�t�B�X�X���L���闎���������s��̋�C������A�����̎����l�Ȗ��͂����߂Ēm�邱�Ƃ��ł��܂����B</span></b></p>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
-
-<table class=MsoTable15Grid4Accent6 border=1 cellspacing=0 cellpadding=0
- align=left style='border-collapse:collapse;border:none;margin-left:4.85pt;
- margin-right:4.85pt'>
- <tr>
-  <td width=607 colspan=2 valign=top style='width:455.25pt;border:solid #F79646 1.0pt;
-  background:#F79646;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-size:16.0pt;font-family:"�l�r ����",serif;
-  color:white'>�y�T�v�z</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #FABF8F 1.0pt;
-  border-top:none;background:#FDE9D9;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
-  background:#FDE9D9;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>���ؘ�</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #FABF8F 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>700</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�~</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #FABF8F 1.0pt;
-  border-top:none;background:#FDE9D9;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�ꏊ</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
-  background:#FDE9D9;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>������</span></b><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'> </span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>��ג��X</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #FABF8F 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Z��</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�����s�䓌�擌���</span></b><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>1</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>3</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Ԓn</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=181 valign=top style='width:135.5pt;border:solid #FABF8F 1.0pt;
-  border-top:none;background:#FDE9D9;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Google</span></b><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'> maps</span></b></p>
-  </td>
-  <td width=426 valign=top style='width:319.75pt;border-top:none;border-left:
-  none;border-bottom:solid #FABF8F 1.0pt;border-right:solid #FABF8F 1.0pt;
-  background:#FDE9D9;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US><a href="https://maps.app.goo.gl/XY5M7yhE81P3YrFt5"><b><span
-  lang=VI style='font-size:16.0pt;font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/XY5M7yhE81P3YrFt5</span></b></a></span></p>
-  </td>
- </tr>
-</table>
-
-<b><span lang=VI style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=354 height=266 src="index_files/image045.jpg"
-align=left hspace=12><img width=314 height=263 src="index_files/image046.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>���́A���������J�t�F������ƕ����ĐR�꒚�ڂ�K��܂����B</span><span
-lang=EN-US><br>
-</span></b><b><span style='font-family:"�l�r ����",serif'>�����̑��̓��₩�ȃG���A�Ɣ�ׂ�ƁA���̏ꏊ�͗������������͋C������A�������ƊX�̋�C���y���ނ̂ɂƂĂ��ǂ��ꏊ���Ɗ����܂����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span><span
-lang=EN-US>: Aoyama-Itchome Station</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US>Google maps: </span></b><span
-lang=EN-US><a href="%20https:/maps.app.goo.gl/vnv7YyMK1zeUrouZA"><b>&nbsp;https://maps.app.goo.gl/vnv7YyMK1zeUrouZA</b></a></span></p>
-
-<p class=MsoNormal><img width=289 height=35 src="index_files/image047.png"
-align=left hspace=12 alt="850 �~ / Ice Sweet Blossom Latte"><img width=289
-height=217 src="index_files/image048.jpg" align=left hspace=12><img width=238
-height=179 src="index_files/image049.jpg" align=left hspace=12><b><span
-style='font-family:"�l�r ����",serif'>�R�U��̍��ԂɁu�u���[�{�g���R�[�q�[�v��K��܂����B�؂̉�����Ɛ����S����ۓI�ȃ~�j�}���ȋ�Ԃ́A�s��̌�����Y�ꂳ���Ă���闎���������ꏊ�ł����B�������̃R�[�q�[���y���݂Ȃ���A�S�g�Ƃ��Ƀ��t���b�V�����邱�Ƃ��ł��܂����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span><span
-lang=EN-US>: </span></b><b><span style='font-family:"�l�r ����",serif'>��</span><span
-lang=EN-US>107-0062 Tokyo, Minato City, Minamiaoyama, 3 Chome&#8722;13&#8722;14 </span></b><b><span
-style='font-family:"�l�r ����",serif'>���c�r��</span><span lang=EN-US> 2</span></b><b><span
-style='font-family:"�l�r ����",serif'>�K</span></b></p>
-
-<p class=MsoNormal><b><span lang=EN-US>Google Maps : </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/8zsxtLyd8vV6yVdV6"><b>https://maps.app.goo.gl/8zsxtLyd8vV6yVdV6</b></a></span></p>
-
-<b><span lang=VI style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b><span lang=VI>&nbsp;</span></b></p>
-
-<p class=MsoNormal><img width=266 height=355 src="index_files/image050.jpg"
-align=left hspace=12><b><span style='font-family:"�l�r ����",serif'>�H�t���̓��₩�ȊX���݂̒��ŁA����I�ȃl�b�g�J�t�F�u����</span></b><b><span
-lang=VI>CLUB</span></b><b><span style='font-family:"�l�r ����",serif'>�v��̌����܂����B�L�x�ȃ}���K��h�����N�o�[�A�\�t�g�N���[���H�ו���Ȃǂ̏[�������T�[�r�X���y���݂Ȃ���A�v���C�x�[�g��ԂŃ����b�N�X���邱�Ƃ��ł��܂����B�s��̌����𗣂�A�ߌ�̊ό��Ɍ������f���炵���G�l���M�[�`���[�W�̎��ԂƂȂ�܂����B</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span><span
-lang=EN-US>: </span></b><b><span style='font-family:"�l�r ����",serif'>��</span><span
-lang=EN-US>101-0021 Tokyo, Chiyoda City, Sotokanda, 3 Chome&#8722;15&#8722;1 7F</span></b></p>
-
-<p class=MsoNormal><img width=358 height=477 src="index_files/image051.jpg"
-align=left hspace=12><b><span lang=EN-US>Google Maps : </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/7385u3Zc9miD4HyD9"><b>https://maps.app.goo.gl/7385u3Zc9miD4HyD9</b></a></span></p>
-
-<table class=MsoTable15Grid4Accent4 border=1 cellspacing=0 cellpadding=0
- align=left width=642 style='width:481.7pt;border-collapse:collapse;border:
- none;margin-left:4.85pt;margin-right:4.85pt'>
- <tr>
-  <td width=642 colspan=2 valign=top style='width:481.7pt;border:solid #8064A2 1.0pt;
-  background:#8064A2;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-size:16.0pt;font-family:"�l�r ����",serif;
-  color:white'>�y�T�v�z</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=277 valign=top style='width:207.4pt;border:solid #B2A1C7 1.0pt;
-  border-top:none;background:#E5DFEC;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=366 valign=top style='width:274.3pt;border-top:none;border-left:
-  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
-  background:#E5DFEC;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>59</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>��</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=277 valign=top style='width:207.4pt;border:solid #B2A1C7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=366 valign=top style='width:274.3pt;border-top:none;border-left:
-  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>947</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�~</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=277 valign=top style='width:207.4pt;border:solid #B2A1C7 1.0pt;
-  border-top:none;background:#E5DFEC;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�ꏊ</span></b></p>
-  </td>
-  <td width=366 valign=top style='width:274.3pt;border-top:none;border-left:
-  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
-  background:#E5DFEC;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�����H�t���N���u</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=277 valign=top style='width:207.4pt;border:solid #B2A1C7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Google
-  Maps</span></p>
-  </td>
-  <td width=366 valign=top style='width:274.3pt;border-top:none;border-left:
-  none;border-bottom:solid #B2A1C7 1.0pt;border-right:solid #B2A1C7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US><a href="https://maps.app.goo.gl/7385u3Zc9miD4HyD9"><b>https://maps.app.goo.gl/7385u3Zc9miD4HyD9</b></a></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><img width=358 height=35 src="index_files/image052.png"
-align=left hspace=12 alt="�A�C�X�N���[���ƈ��ݕ��͖����ł��B"><img width=334 height=474
-src="index_files/image053.jpg" align=left hspace=12><b><span lang=EN-US><br
-clear=all style='page-break-before:always'>
-</span></b></p>
-
-<p class=MsoNormal><img width=266 height=215 src="index_files/image054.jpg"
-align=left hspace=12></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�u�������̉��₩�Ȍߌ�v</span>
-</b><b><span style='font-family:"�l�r ����",serif'>�ؘR������S�n�悢�������̌ߌ�B�U����y���ސl�X��Ƒ��A��̎p�������A�s��̌�����Y��ăz�b�ƈꑧ����A����̉������ɖ��������i�ł��B</span></b></p>
-
-<p class=MsoNormal><img width=248 height=330 src="index_files/image055.jpg"
-align=left hspace=12></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�u����̏I���ɁA�₽���R�[���Ń��t���b�V���B�������̐Â��ȋ�C�̒��ň��ރR�[���́A������ꂽ�̂ɐ��ݓn��ō��̃G�l���M�[�⋋�ł��B�v</span></b></p>
-
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�ꏊ</span><span
-lang=EN-US> : Uenokoen, Taito City, Tokyo 110-0007</span></b></p>
-
-<table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
- align=left width=652 style='width:488.8pt;border-collapse:collapse;border:
- none;margin-left:4.85pt;margin-right:4.85pt'>
- <tr>
-  <td width=652 colspan=2 valign=top style='width:488.8pt;border:solid #4F81BD 1.0pt;
-  background:#4F81BD;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0mm;text-align:center;
-  line-height:normal'><b><span style='font-size:16.0pt;font-family:"�l�r ����",serif;
-  color:white'>�y�T�v�z</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=189 valign=top style='width:141.9pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=463 valign=top style='width:346.9pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����g�����J���[</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=189 valign=top style='width:141.9pt;border:solid #95B3D7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>����</span></b></p>
-  </td>
-  <td width=463 valign=top style='width:346.9pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>762</span></b><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�~</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=189 valign=top style='width:141.9pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�ꏊ</span></b></p>
-  </td>
-  <td width=463 valign=top style='width:346.9pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�g���</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=189 valign=top style='width:141.9pt;border:solid #95B3D7 1.0pt;
-  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:16.0pt;font-family:"�l�r ����",serif'>�Z��</span></b></p>
-  </td>
-  <td width=463 valign=top style='width:346.9pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>3
-  Chome-33-8 Higashiueno, Taito City, Tokyo 110-0015</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=189 valign=top style='width:141.9pt;border:solid #95B3D7 1.0pt;
-  border-top:none;background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Google
-  Maps</span></b></p>
-  </td>
-  <td width=463 valign=top style='width:346.9pt;border-top:none;border-left:
-  none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
-  background:#DBE5F1;padding:0mm 5.4pt 0mm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US><a href="https://maps.app.goo.gl/LMJjkyUmxLLsXki36"><b><span
-  style='font-size:16.0pt;font-family:"Calibri",sans-serif'>https://maps.app.goo.gl/LMJjkyUmxLLsXki36</span></b></a></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><img width=395 height=234 src="index_files/image056.jpg"
-align=left hspace=12><b><span lang=EN-US>Google Maps : </span></b><span
-lang=EN-US><a href="https://maps.app.goo.gl/mkiJ5f82ivXAAErG6"><b>https://maps.app.goo.gl/mkiJ5f82ivXAAErG6</b></a><b><br
-clear=all style='page-break-before:always'>
-</b></span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
-style='font-size:36.0pt;line-height:115%;font-family:"Calibri",sans-serif'>3</span><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif'>���Ԃ̑���p</span></b></p>
-
-<table class=MsoTable15Grid5DarkAccent5 border=1 cellspacing=0 cellpadding=0
- width=592 style='width:444.0pt;border-collapse:collapse;border:none'>
- <tr style='height:28.2pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-right:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���t</span></b></p>
-  </td>
-  <td width=67 valign=top style='width:50.0pt;border-top:solid white 1.0pt;
-  border-left:none;border-bottom:solid white 1.0pt;border-right:none;
-  background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>����</span></b></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:solid white 1.0pt;
-  border-left:none;border-bottom:solid white 1.0pt;border-right:none;
-  background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�ڍ�</span></b></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border:solid white 1.0pt;
-  border-left:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���z�i�~�j</span></b></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>5</span></b><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��</span></b><b><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>5</span></b><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��</span></b></p>
-  </td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�������i���[�����{�L�q�{���g���j</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>1430</span></p>
-  </td>
- </tr>
- <tr style='height:28.2pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��ʔ�</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�������g��</span><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>1</span><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>����Ԍ�</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>700</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�y�H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�����Ă�</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>700</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���݂���</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���݂���</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>100</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�[�H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�ꗖ���[����</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>2580</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>6</span></b><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��</span></b><b><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>5</span></b><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��</span></b></p>
-  </td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�}���G�c�̂��ٓ��i</span><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>50</span><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�������j</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>214</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�[�H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>������</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>800</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>7</span></b><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��</span></b><b><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>5</span></b><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>��</span></b></p>
-  </td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�������i���ؘ��j</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>700</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���ݕ�</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'>Blue
-  Bottle Coffee</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>850</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�T�[�r�X</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�����O���[�v</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>780</span></p>
-  </td>
- </tr>
- <tr style='height:28.2pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�d�ԑ�</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�_�c</span><span
-  style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'> </span><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Cambria Math",serif;
-  color:#1F1F1F'>��</span><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'> </span><span style='font-size:11.0pt;
-  font-family:"Yu Gothic";color:#1F1F1F'>�R�꒚�ځA�R�꒚��</span><span
-  style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#1F1F1F'> </span><span
-  lang=EN-US style='font-size:11.0pt;font-family:"Cambria Math",serif;
-  color:#1F1F1F'>��</span><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'> </span><span style='font-size:11.0pt;
-  font-family:"Yu Gothic";color:#1F1F1F'>�_�c</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:28.2pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>356</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�[�H</span></p>
-  </td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>�g���</span></p>
-  </td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#DAEEF3;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>762</span></p>
-  </td>
- </tr>
- <tr style='height:18.6pt'>
-  <td width=107 valign=top style='width:80.0pt;border:solid white 1.0pt;
-  border-top:none;background:#4BACC6;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal style='margin-bottom:0mm;line-height:normal'><b><span
-  style='font-size:11.0pt;font-family:"Yu Gothic";color:#1F1F1F'>���v</span></b></p>
-  </td>
-  <td width=67 valign=top style='width:50.0pt;border-top:none;border-left:none;
-  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
-  #B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=309 valign=top style='width:232.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'></td>
-  <td width=109 valign=top style='width:82.0pt;border-top:none;border-left:
-  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
-  background:#B6DDE8;padding:0mm 5.4pt 0mm 5.4pt;height:18.6pt'>
-  <p class=MsoNormal align=right style='margin-bottom:0mm;text-align:right;
-  line-height:normal'><b><span lang=EN-US style='font-size:11.0pt;font-family:
-  "Arial",sans-serif;color:#1F1F1F'>9972</span></b></p>
-  </td>
- </tr>
-</table>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0mm 0mm 1.0pt 0mm'>
-
-<p class=MsoNormal style='border:none;padding:0mm'><b><span lang=EN-US
-style='font-size:36.0pt;line-height:115%;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
+<div class="section">
+<h2>2日目：新宿・渋谷（5月6日）</h2>
+
+<p>
+2日目、私は新宿と渋谷を訪れました。
+浅草の伝統的な雰囲気とは異なり、ここでは高層ビルや巨大な広告モニター、多くの人々で溢れる東京らしい現代的な景色を感じることができました。
+</p>
+
+<p>
+渋谷駅を出た瞬間、多くの人々や巨大な広告モニターが目に入り、東京の賑やかさに圧倒されました。
+</p>
+
+<p>
+渋谷で最初に訪れた場所の一つは、有名なハチ公像でした。
+</p>
+
+<p>
+ハチ公の忠誠心に関する話を知っていたので、この場所は単なる観光地ではなく、とても特別な意味を持つ場所だと感じました。
+</p>
+
+<p>
+その後、副都心線を利用して新宿へ向かいました。
+東京の電車路線はとても複雑ですが、有名なエリア同士の移動は便利で、とてもスムーズでした。
+</p>
 
 </div>
 
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:36.0pt;line-height:115%;font-family:"�l�r ����",serif'>�ȏ�</span></b></p>
+<div class="section">
+<h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
 
-<p class=MsoNormal><b><span style='font-family:"�l�r ����",serif'>�����</span></b><b><span
-lang=EN-US style='font-family:"Calibri",sans-serif'>3</span></b><b><span
-style='font-family:"�l�r ����",serif'>���Ԃ̓������s�́A���ɂƂ��Ĉꐶ�Y��邱�Ƃ̂ł��Ȃ��f���炵���o���ƂȂ�܂����B�󑐂̓`������V�h�E�a�J�̌���I�Ȋ��C�܂ŁA�����̑��p�I�Ȗ��͂�[���m�邱�Ƃ��ł��܂����B���̂悤�ȋM�d�ȋ@���������������ɐS��芴�Ӑ\���グ�܂��B���̎v���o��ƂɁA���ꂩ������{�ł̎d���␶����簐i���Ă܂���܂��B</span></b></p>
+<p>
+最終日は、趣の異なる二つの街を訪れました。
+</p>
 
-<p class=MsoNormal><img width=414 height=312 src="index_files/image057.png"
-align=left hspace=12
-alt="Top 50+ h&igrave;nh &#7843;nh c&uacute;i &#273;&#7847;u c&#7843;m &#417;n tuy&#7879;t &#273;&#7865;p cho t&acirc;m th&#7913;c t&iacute;ch c&#7921;c"><span
-lang=EN-US><img width=32 height=32 src="index_files/image058.png"
-alt="K&#7871;t qu&#7843; h&igrave;nh &#7843;nh cho ng&#432;&#7901;i nh&#7853;t qu&#7923; c&uacute;i &#273;&#7847;u &#7843;nh g&#7855;n word"></span><b><span
-lang=EN-US style='font-size:16.0pt;line-height:115%;font-family:"Calibri",sans-serif'>&nbsp;</span></b></p>
+<p>
+活気あふれる秋葉原では、ネオンや広告が並ぶ日本の現代文化を体感しました。
+</p>
+
+<p>
+一方で青山一丁目では、洗練されたオフィス街が広がる落ち着いた都会の空気を感じることができました。
+</p>
+
+<p>
+青山散策の合間に「ブルーボトルコーヒー」を訪れました。
+木の温もりと青いロゴが印象的なミニマルな空間は、都会の喧騒を忘れさせてくれる落ち着いた場所でした。
+</p>
+
+<p>
+秋葉原では「快活CLUB」を体験しました。
+豊富なマンガやドリンクバー、ソフトクリーム食べ放題など、非常に快適な空間でした。
+</p>
+
+<p>
+上野公園では穏やかな午後の空気を楽しみました。
+歩き疲れた後に飲んだ冷たいコーラは、とても美味しかったです。
+</p>
+
+</div>
+
+<div class="section">
+<h2>3日間の総費用</h2>
+
+<table>
+
+<tr>
+<th>日付</th>
+<th>項目</th>
+<th>詳細</th>
+<th>金額</th>
+</tr>
+
+<tr>
+<td>5月5日</td>
+<td>昼食</td>
+<td>日高屋</td>
+<td>1430円</td>
+</tr>
+
+<tr>
+<td>5月5日</td>
+<td>交通費</td>
+<td>東京メトロ1日乗車券</td>
+<td>700円</td>
+</tr>
+
+<tr>
+<td>5月5日</td>
+<td>夕食</td>
+<td>一蘭</td>
+<td>2580円</td>
+</tr>
+
+<tr>
+<td>5月6日</td>
+<td>朝食</td>
+<td>マルエツ弁当</td>
+<td>214円</td>
+</tr>
+
+<tr>
+<td>5月7日</td>
+<td>Blue Bottle Coffee</td>
+<td>飲み物</td>
+<td>850円</td>
+</tr>
+
+<tr>
+<td>5月7日</td>
+<td>吉野家</td>
+<td>夕食</td>
+<td>762円</td>
+</tr>
+
+<tr>
+<th colspan="3">合計</th>
+<th>9972円</th>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>結び</h2>
+
+<p>
+今回の3日間の東京旅行は、私にとって一生忘れることのできない素晴らしい経験となりました。
+</p>
+
+<p>
+浅草の伝統から新宿・渋谷の現代的な活気まで、東京の多角的な魅力を深く知ることができました。
+</p>
+
+<p>
+このような貴重な機会をくださった会長に心より感謝申し上げます。
+</p>
+
+<p>
+この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
+</p>
 
 </div>
 
 </body>
-
 </html>
