@@ -1,15 +1,59 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <title>Báo cáo du lịch Tokyo - Nguyễn Trọng Hiền</title>
-    <meta name="description" content="Báo cáo chi tiết chuyến đi Tokyo 3 ngày của Nguyễn Trọng Hiền gửi Hội trưởng. Khám phá Asakusa, Shinjuku và Akihabara.">
-    <meta name="keywords" content="Nguyễn Trọng Hiền, Tokyo, du lịch, báo cáo, Asakusa, Akihabara , Shinjuku">
-</head>
-<head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>東京案内書</title>
+<title>
+東京案内書 | Tokyo Travel Report | Nguyễn Trọng Hiền
+</title>
+
+<meta name="description" content="
+Nguyễn Trọng Hiền Tokyo travel report.
+Tokyo tourism experience in Asakusa, Shinjuku, Shibuya, Akihabara and Aoyama.
+Japanese culture, Tokyo sightseeing, Tokyo travel guide and Japan internship experience.
+">
+
+<meta name="keywords" content="
+Nguyễn Trọng Hiền,
+Nguyen Trong Hien,
+Tokyo,
+Tokyo report,
+Tokyo travel report,
+Tokyo viewing,
+Tokyo tourism,
+Japan travel,
+Japan internship,
+Tokyo sightseeing,
+Asakusa,
+Shinjuku,
+Shibuya,
+Akihabara,
+Aoyama,
+東京案内書,
+東京旅行,
+東京観光,
+浅草,
+新宿,
+渋谷,
+秋葉原,
+青山一丁目,
+日本文化,
+Japanese culture,
+GitHub Pages,
+kuroHilde,
+NgnHien
+">
+
+<meta name="author" content="Nguyễn Trọng Hiền">
+
+<meta property="og:title" content="東京案内書 | Nguyễn Trọng Hiền">
+<meta property="og:description" content="Tokyo travel report and sightseeing experience in Japan.">
+<meta property="og:image" content="images/image001.jpg">
+<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,31 +62,42 @@
 
 <style>
 
-body{
-    max-width: 920px;
-    margin: auto;
-    padding: 60px 24px;
-    line-height: 2.1;
-    font-size: 18px;
-    background: #f7f7f7;
-    color: #222;
-    font-family: 'Noto Serif JP', serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+body{
+    max-width:920px;
+    margin:auto;
+    padding:60px 24px;
+    background:#f5f5f5;
+    color:#222;
+    line-height:2;
+    font-size:18px;
+    font-family:'Noto Serif JP', serif;
+}
+
 .hero{
     height:520px;
-    border-radius:24px;
+    border-radius:28px;
     overflow:hidden;
+
     background:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url('images/image001.jpg');
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url('images/image001.jpg');
 
     background-size:cover;
     background-position:center;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
+    box-shadow:0 12px 40px rgba(0,0,0,0.18);
+
     margin-bottom:60px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 .overlay{
@@ -52,47 +107,35 @@ body{
 
 .overlay h1{
     font-size:64px;
-    margin-bottom:20px;
     letter-spacing:4px;
-    color:white;
+    margin-bottom:20px;
 }
 
 .date,
 .author{
     font-size:20px;
-    margin:8px 0;
-}
-h1{
-    text-align:center;
-    font-size:48px;
-    margin-bottom:10px;
-    letter-spacing:2px;
-}
-
-h2{
-    margin-top:70px;
-    margin-bottom:25px;
-    padding-bottom:10px;
-    border-bottom:2px solid #222;
-    font-size:30px;
-}
-
-h3{
-    margin-top:40px;
-    font-size:24px;
-}
-
-.center{
-    text-align:center;
-    color:#666;
+    margin:10px 0;
 }
 
 .section{
     background:white;
-    padding:40px;
-    margin-top:40px;
-    border-radius:18px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    padding:42px;
+    border-radius:24px;
+    margin-bottom:40px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.05);
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:28px;
+    padding-bottom:12px;
+    border-bottom:2px solid #222;
+}
+
+h3{
+    font-size:24px;
+    margin-top:36px;
+    margin-bottom:16px;
 }
 
 p{
@@ -101,33 +144,59 @@ p{
 }
 
 ol{
-    padding-left:25px;
+    padding-left:24px;
 }
 
 li{
     margin-bottom:14px;
 }
 
+img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+    margin:28px 0;
+    object-fit:cover;
+
+    transition:0.35s;
+
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+img:hover{
+    transform:scale(1.01);
+    box-shadow:0 12px 32px rgba(0,0,0,0.16);
+}
+
+.portrait{
+    width:60%;
+    margin:auto;
+}
+
+.small-image{
+    width:75%;
+    margin:auto;
+}
+
 table{
     width:100%;
     border-collapse:collapse;
-    margin-top:25px;
-    margin-bottom:25px;
     overflow:hidden;
-    border-radius:12px;
+    border-radius:16px;
+    margin-top:24px;
+    margin-bottom:24px;
 }
 
 th{
     background:#222;
     color:white;
-    padding:14px;
+    padding:16px;
     text-align:left;
-    font-weight:700;
 }
 
 td{
-    background:#fff;
-    padding:14px;
+    background:white;
+    padding:16px;
     border-bottom:1px solid #ddd;
 }
 
@@ -135,18 +204,11 @@ tr:last-child td{
     border-bottom:none;
 }
 
-img{
-    width:100%;
-    border-radius:16px;
-    margin-top:20px;
-    margin-bottom:20px;
-}
-
-hr{
-    border:none;
-    height:1px;
-    background:#ddd;
-    margin:60px 0;
+.footer{
+    text-align:center;
+    margin-top:50px;
+    color:#666;
+    font-size:15px;
 }
 
 a{
@@ -161,68 +223,43 @@ a:hover{
 @media screen and (max-width:768px){
 
 body{
-    padding:25px 14px;
+    padding:24px 14px;
     font-size:16px;
 }
 
-h1{
-    font-size:34px;
+.hero{
+    height:360px;
+}
+
+.overlay h1{
+    font-size:40px;
+}
+
+.section{
+    padding:26px;
 }
 
 h2{
     font-size:24px;
 }
 
-.section{
-    padding:24px;
+img{
+    border-radius:16px;
+}
+
+.portrait,
+.small-image{
+    width:100%;
 }
 
 table{
     font-size:14px;
 }
-img{
-    width:100%;
-    border-radius:18px;
-    margin-top:24px;
-    margin-bottom:24px;
-    display:block;
-    object-fit:cover;
-    transition:0.3s;
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-img:hover{
-    transform:scale(1.01);
-    box-shadow:0 12px 30px rgba(0,0,0,0.18);
-}
-.center img:first-child{
-    width:100%;
-    max-height:520px;
-    object-fit:cover;
-}
-
-.center img:last-child{
-    width:180px;
-    height:180px;
-    object-fit:cover;
-    border-radius:50%;
-    margin:auto;
-    border:5px solid white;
-    box-shadow:0 6px 20px rgba(0,0,0,0.2);
-}
-.portrait{
-    width:60%;
-    margin:auto;
-}
-.avatar{
-    width:500px;
-    height:500px;
-    
-    border-radius:100%;
-}
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -233,18 +270,20 @@ img:hover{
 
         <h1>東京案内書</h1>
 
-        <p class="date">2026年5月09日</p>
+        <p class="date">
+            2026年5月09日
+        </p>
 
-        <p class="author">氏名：グエン・チョン・ヒエン</p>
-
+        <p class="author">
+            氏名：グエン・チョン・ヒエン
+        </p>
 
     </div>
 
 </div>
 
-<hr>
-
 <div class="section">
+
 <h2>【要約・構成案】</h2>
 
 <ol>
@@ -252,9 +291,11 @@ img:hover{
 <li>旅のハイライト</li>
 <li>結びの言葉</li>
 </ol>
+
 </div>
 
 <div class="section">
+
 <h2>感謝</h2>
 
 <p>
@@ -269,211 +310,168 @@ img:hover{
 私はこの素晴らしい思い出を胸に刻み、これからの日本での生活や仕事の糧にしてまいりたいと思います。
 </p>
 
-<p>
-また、今回の旅を通して、東京の有名な場所を訪れるだけでなく、日本の文化や人々、そして街の雰囲気を実際に肌で感じることができました。
-</p>
-
-<p>
-この経験は、日本で生活し働いていく中で、私自身をさらに成長させてくれる貴重な財産になると感じています。
-</p>
 </div>
 
 <div class="section">
+
 <h2>1日目：浅草（5月5日）</h2>
 
 <p>
 初日は、日本の伝統的な風情が色濃く残る街、浅草を訪れました。
-都会の喧騒から離れたこの場所では、まるで時間がゆっくりと流れているかのような穏やかな空気を感じることができました。
 </p>
 
-<p>
-私が浅草に強く惹かれた理由は、古き良き日本の文化を肌で感じられる点にあります。
-この体験を通じて、日本の歴史の深さを再発見することができました。
-</p>
-<!-- Asakusa -->
-<img src="images/image003.jpg" alt="">
+<img src="images/image003.jpg" alt="Asakusa">
+
 <h3>昼ご飯</h3>
 
 <p>
 出発する前に、私は昼食をとるために「日高屋」に立ち寄りました。
-そこで、昔ながらのラーメンと餃子を注文しました。
 </p>
-<!-- hidakaya store -->
-<img src="images/image004.jpg" alt="">
-<p>
-温かいラーメンと香ばしい餃子はとても美味しく、これから始まる旅への期待をさらに高めてくれました。
-</p>
+
+<img src="images/image004.jpg" alt="Hidakaya">
+
+<div class="small-image">
+<img src="images/image005.jpg" alt="Ramen">
+</div>
+
 <table>
-            <tr>
-                <th>料理</th>
-                <td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
-            </tr>
 
-            <tr>
-                <th>料金</th>
-                <td>1430円</td>
-            </tr>
+<tr>
+<th>料理</th>
+<td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
+</tr>
 
-            <tr>
-                <th>場所</th>
-                <td>日高屋 稲荷町店</td>
-            </tr>
-        </table>
+<tr>
+<th>料金</th>
+<td>1430円</td>
+</tr>
+
+<tr>
+<th>場所</th>
+<td>日高屋 稲荷町店</td>
+</tr>
+
+</table>
+
+<p>
+浅草寺へ向かう途中、観音通りを通りました。
+</p>
+
+<img src="images/image008.jpg" alt="Kannon Street">
+
+<img src="images/image011.jpg" alt="Kaminarimon">
+
+<img src="images/image012.jpg" alt="Sensoji">
+
+<p>
+私はお寺でおみくじを引いてみました。
+</p>
+
+<div class="portrait">
+<img src="images/image018.jpg" alt="Omikuji">
+</div>
 
 </div>
 
 <div class="section">
+
 <h2>2日目：新宿・渋谷（5月6日）</h2>
 
 <p>
 2日目、私は新宿と渋谷を訪れました。
-浅草の伝統的な雰囲気とは異なり、ここでは高層ビルや巨大な広告モニター、多くの人々で溢れる東京らしい現代的な景色を感じることができました。
 </p>
-<img src="images/image029.jpg" alt="">
+
+<img src="images/image029.jpg" alt="Shibuya">
+
+<img src="images/image031.jpg" alt="Tokyo">
+
+<img src="images/image032.jpg" alt="Hachiko">
+
 <p>
-渋谷駅を出た瞬間、多くの人々や巨大な広告モニターが目に入り、東京の賑やかさに圧倒されました。
-</p>
-<img src="images/image031.jpg" alt="">
-<p>
-渋谷で最初に訪れた場所の一つは、有名なハチ公像でした。
-</p>
-<img src="images/image032.jpg" alt="">
-<p>
-ハチ公の忠誠心に関する話を知っていたので、この場所は単なる観光地ではなく、とても特別な意味を持つ場所だと感じました。
-</p>
-<img src="images/image040.jpg" alt="">
-<p>
-その後、副都心線を利用して新宿へ向かいました。
-東京の電車路線はとても複雑ですが、有名なエリア同士の移動は便利で、とてもスムーズでした。
+東京の賑やかさに圧倒されました。
 </p>
 
 </div>
 
 <div class="section">
+
 <h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
 
 <p>
 最終日は、趣の異なる二つの街を訪れました。
 </p>
 
-<p>
-活気あふれる秋葉原では、ネオンや広告が並ぶ日本の現代文化を体感しました。
-</p>
-<p>
-一方で青山一丁目では、洗練されたオフィス街が広がる落ち着いた都会の空気を感じることができました。
-</p>
-<img src="images/image042.jpg" alt="">
-<p>
-青山散策の合間に「ブルーボトルコーヒー」を訪れました。
-木の温もりと青いロゴが印象的なミニマルな空間は、都会の喧騒を忘れさせてくれる落ち着いた場所でした。
-</p>
-<img src="images/image047.jpg" alt="">
-<p>
-秋葉原では「快活CLUB」を体験しました。
-豊富なマンガやドリンクバー、ソフトクリーム食べ放題など、非常に快適な空間でした。
-</p>
-<img src="images/image048.jpg" alt="">
-<p>
-上野公園では穏やかな午後の空気を楽しみました。
-歩き疲れた後に飲んだ冷たいコーラは、とても美味しかったです。
-</p>
-<img src="images/image051.jpg" alt="">
+<img src="images/image042.jpg" alt="Aoyama">
+
+<img src="images/image047.jpg" alt="Blue Bottle Coffee">
+
+<img src="images/image048.jpg" alt="Akihabara">
+
+<img src="images/image051.jpg" alt="Ueno Park">
+
 </div>
 
 <div class="section">
+
 <h2>3日間の総費用</h2>
 
-<table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%; text-align: center;">
-            <thead>
-                <tr>
-                    <th>日付</th>
-                    <th>項目</th>
-                    <th>詳細</th>
-                    <th>金額（円）</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>5月5日</td>
-                    <td>昼食</td>
-                    <td>日高屋（ラーメン＋餃子＋唐揚げ）</td>
-                    <td>1430</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>交通費</td>
-                    <td>東京メトロ1日乗車券</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>軽食</td>
-                    <td>たこ焼き</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>おみくじ</td>
-                    <td>おみくじ</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>夕食</td>
-                    <td>一蘭ラーメン</td>
-                    <td>2580</td>
-                </tr>
+<table>
 
-                <tr>
-                    <td>6月5日</td>
-                    <td>朝食</td>
-                    <td>マルエツのお弁当（50％割引）</td>
-                    <td>214</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>夕食</td>
-                    <td>日高屋</td>
-                    <td>800</td>
-                </tr>
+<tr>
+<th>日付</th>
+<th>項目</th>
+<th>詳細</th>
+<th>金額</th>
+</tr>
 
-                <tr>
-                    <td>7月5日</td>
-                    <td>昼食</td>
-                    <td>日高屋（中華丼）</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>飲み物</td>
-                    <td>Blue Bottle Coffee</td>
-                    <td>850</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>サービス</td>
-                    <td>快活グループ</td>
-                    <td>780</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>電車代</td>
-                    <td>神田 ⇒ 青山一丁目、青山一丁目 ⇒ 神田</td>
-                    <td>356</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>夕食</td>
-                    <td>吉野家</td>
-                    <td>762</td>
-                </tr>
+<tr>
+<td>5月5日</td>
+<td>昼食</td>
+<td>日高屋</td>
+<td>1430円</td>
+</tr>
 
-                <tr>
-                    <td colspan="3"><strong>合計</strong></td>
-                    <td><strong>9972</strong></td>
-                </tr>
-            </tbody>
-        </table>
+<tr>
+<td>5月5日</td>
+<td>交通費</td>
+<td>東京メトロ1日乗車券</td>
+<td>700円</td>
+</tr>
+
+<tr>
+<td>5月5日</td>
+<td>夕食</td>
+<td>一蘭</td>
+<td>2580円</td>
+</tr>
+
+<tr>
+<td>5月6日</td>
+<td>朝食</td>
+<td>マルエツ弁当</td>
+<td>214円</td>
+</tr>
+
+<tr>
+<td>5月7日</td>
+<td>Blue Bottle Coffee</td>
+<td>飲み物</td>
+<td>850円</td>
+</tr>
+
+<tr>
+<td>5月7日</td>
+<td>吉野家</td>
+<td>夕食</td>
+<td>762円</td>
+</tr>
+
+<tr>
+<th colspan="3">合計</th>
+<th>9972円</th>
+</tr>
+
+</table>
 
 </div>
 
@@ -496,7 +494,25 @@ img:hover{
 <p>
 この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
 </p>
+
+</div>
+
+<div class="footer">
+
+<p>
+Tokyo Travel Report by Nguyễn Trọng Hiền
+</p>
+
+<p>
+Tokyo sightseeing experience in Japan.
+</p>
+
+<p>
+東京旅行レポート・日本文化・浅草・渋谷・新宿・秋葉原
+</p>
+
 </div>
 
 </body>
 </html>
+```
