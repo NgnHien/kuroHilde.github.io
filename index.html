@@ -2,428 +2,485 @@
 <html lang="ja">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        東京案内書 | Nguyễn Trọng Hiền Tokyo Travel Report
+    </title>
 
-<title>
-東京案内書 | Tokyo Travel Report | Nguyễn Trọng Hiền
-</title>
-
-<meta name="description" content="
+    <meta name="description" content="
 Nguyễn Trọng Hiền Tokyo travel report.
-Tokyo tourism experience in Asakusa, Shinjuku, Shibuya, Akihabara and Aoyama.
-Japanese culture, Tokyo sightseeing, Tokyo travel guide and Japan internship experience.
+Tokyo sightseeing in Asakusa, Shinjuku, Shibuya and Akihabara.
 ">
 
-<meta name="keywords" content="
+    <meta name="keywords" content="
 Nguyễn Trọng Hiền,
-Nguyen Trong Hien,
-グエンチョンヒエン,
-ヒエン,
 Tokyo,
-Tokyo report,
 Tokyo travel report,
-Tokyo viewing,
-Tokyo tourism,
-Japan travel,
-Japan internship,
-Tokyo sightseeing,
+東京案内書,
 Asakusa,
 Shinjuku,
 Shibuya,
-Akihabara,
-Aoyama,
-東京案内書,
-東京旅行,
-東京観光,
-浅草,
-新宿,
-渋谷,
-秋葉原,
-青山一丁目,
-日本文化,
-Japanese culture,
-GitHub Pages,
-kuroHilde,
-NgnHien
+Akihabara
 ">
 
-<meta name="author" content="Nguyễn Trọng Hiền">
 
-<meta property="og:title" content="東京案内書 | Nguyễn Trọng Hiền">
-<meta property="og:description" content="Tokyo travel report and sightseeing experience in Japan.">
-<meta property="og:image" content="images/image001.jpg">
-<meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            max-width: 920px;
+            margin: auto;
+            padding: 60px 24px;
+            line-height: 2.1;
+            font-size: 18px;
+            background: #f7f7f7;
+            color: #222;
+            font-family: 'Noto Serif JP', serif;
+        }
 
-<style>
+        .hero {
+            height: 520px;
+            border-radius: 24px;
+            overflow: hidden;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url('images/image001.jpg');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
 
-body{
-    max-width:920px;
-    margin:auto;
-    padding:60px 24px;
-    background:#f5f5f5;
-    color:#222;
-    line-height:2;
-    font-size:18px;
-    font-family:'Noto Serif JP', serif;
-}
+        .overlay {
+            text-align: center;
+            color: white;
+        }
 
-.hero{
-    height:520px;
-    border-radius:28px;
-    overflow:hidden;
+        .overlay h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            color: white;
+        }
 
-    background:
-    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url('images/image001.jpg');
+        .date,
+        .author {
+            font-size: 20px;
+            margin: 8px 0;
+        }
 
-    background-size:cover;
-    background-position:center;
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+        h2 {
+            margin-top: 70px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #222;
+            font-size: 30px;
+        }
 
-    box-shadow:0 12px 40px rgba(0,0,0,0.18);
+        h3 {
+            margin-top: 40px;
+            font-size: 24px;
+        }
 
-    margin-bottom:60px;
-}
+        .center {
+            text-align: center;
+            color: #666;
+        }
 
-.overlay{
-    text-align:center;
-    color:white;
-}
+        .section {
+            background: white;
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
 
-.overlay h1{
-    font-size:64px;
-    letter-spacing:4px;
-    margin-bottom:20px;
-}
+        p {
+            margin-bottom: 24px;
+            text-align: justify;
+        }
 
-.date,
-.author{
-    font-size:20px;
-    margin:10px 0;
-}
+        ol {
+            padding-left: 25px;
+        }
 
-.section{
-    background:white;
-    padding:42px;
-    border-radius:24px;
-    margin-bottom:40px;
-    box-shadow:0 5px 25px rgba(0,0,0,0.05);
-}
+        li {
+            margin-bottom: 14px;
+        }
 
-h2{
-    font-size:32px;
-    margin-bottom:28px;
-    padding-bottom:12px;
-    border-bottom:2px solid #222;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
 
-h3{
-    font-size:24px;
-    margin-top:36px;
-    margin-bottom:16px;
-}
+        th {
+            background: #222;
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-weight: 700;
+        }
 
-p{
-    margin-bottom:24px;
-    text-align:justify;
-}
+        td {
+            background: #fff;
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+        }
 
-ol{
-    padding-left:24px;
-}
+        tr:last-child td {
+            border-bottom: none;
+        }
 
-li{
-    margin-bottom:14px;
-}
+        img {
+            width: 100%;
+            border-radius: 16px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-img{
-    width:100%;
-    display:block;
-    border-radius:20px;
-    margin:28px 0;
-    object-fit:cover;
+        hr {
+            border: none;
+            height: 1px;
+            background: #ddd;
+            margin: 60px 0;
+        }
 
-    transition:0.35s;
+        a {
+            color: #005bbb;
+            text-decoration: none;
+        }
 
-    box-shadow:0 8px 24px rgba(0,0,0,0.08);
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-img:hover{
-    transform:scale(1.01);
-    box-shadow:0 12px 32px rgba(0,0,0,0.16);
-}
+        @media screen and (max-width:768px) {
 
-.portrait{
-    width:60%;
-    margin:auto;
-}
+            body {
+                padding: 25px 14px;
+                font-size: 16px;
+            }
 
-.small-image{
-    width:75%;
-    margin:auto;
-}
+            h1 {
+                font-size: 34px;
+            }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    overflow:hidden;
-    border-radius:16px;
-    margin-top:24px;
-    margin-bottom:24px;
-}
+            h2 {
+                font-size: 24px;
+            }
 
-th{
-    background:#222;
-    color:white;
-    padding:16px;
-    text-align:left;
-}
+            .section {
+                padding: 24px;
+            }
 
-td{
-    background:white;
-    padding:16px;
-    border-bottom:1px solid #ddd;
-}
+            table {
+                font-size: 14px;
+            }
 
-tr:last-child td{
-    border-bottom:none;
-}
+            img {
+                width: 100%;
+                border-radius: 18px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                display: block;
+                object-fit: cover;
+                transition: 0.3s;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            }
 
-.footer{
-    text-align:center;
-    margin-top:50px;
-    color:#666;
-    font-size:15px;
-}
+            img:hover {
+                transform: scale(1.01);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+            }
 
-a{
-    color:#005bbb;
-    text-decoration:none;
-}
+            .center img:first-child {
+                width: 100%;
+                max-height: 520px;
+                object-fit: cover;
+            }
 
-a:hover{
-    text-decoration:underline;
-}
+            .center img:last-child {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin: auto;
+                border: 5px solid white;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            }
 
-@media screen and (max-width:768px){
+            .portrait {
+                width: 60%;
+                margin: auto;
+            }
 
-body{
-    padding:24px 14px;
-    font-size:16px;
-}
+            .avatar {
+                width: 500px;
+                height: 500px;
 
-.hero{
-    height:360px;
-}
+                border-radius: 100%;
+            }
 
-.overlay h1{
-    font-size:40px;
-}
-
-.section{
-    padding:26px;
-}
-
-h2{
-    font-size:24px;
-}
-
-img{
-    border-radius:16px;
-}
-
-.portrait,
-.small-image{
-    width:100%;
-}
-
-table{
-    font-size:14px;
-}
-
-}
-
-</style>
-
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="hero">
+    <div class="hero">
 
-    <div class="overlay">
+        <div class="overlay">
 
-        <h1>東京案内書</h1>
+            <h1>東京案内書</h1>
 
-        <p class="date">
-            2026年5月09日
-        </p>
+            <p class="date">2026年5月09日</p>
 
-        <p class="author">
-            氏名：グエン・チョン・ヒエン
-        </p>
-        <h2>
-Nguyễn Trọng Hiền Tokyo Travel Report
-</h2>
+            <p class="author">氏名：グエン・チョン・ヒエン</p>
 
-<p>
-This website contains a Tokyo travel report by Nguyễn Trọng Hiền.
-The report includes Asakusa, Shinjuku, Shibuya and Akihabara sightseeing experiences in Japan.
-</p>
+            <h2>
+                Nguyễn Trọng Hiền Tokyo Travel Report
+            </h2>
+
+            <p>
+                This website contains a Tokyo travel report by Nguyễn Trọng Hiền.
+                The report includes Asakusa, Shinjuku, Shibuya and Akihabara sightseeing experiences in Japan.
+            </p>
+        </div>
 
     </div>
 
-</div>
+    <hr>
 
-<div class="section">
+    <div class="section">
+        <h2>【要約・構成案】</h2>
 
-<h2>【要約・構成案】</h2>
+        <ol>
+            <li>感謝の言葉</li>
+            <li>旅のハイライト</li>
+            <li>結びの言葉</li>
+        </ol>
+    </div>
 
-<ol>
-<li>感謝の言葉</li>
-<li>旅のハイライト</li>
-<li>結びの言葉</li>
-</ol>
+    <div class="section">
+        <h2>感謝</h2>
 
-</div>
+        <p>
+            まず初めに、この度は東京を観光する貴重な機会をくださいました会長に、心より感謝申し上げます。
+        </p>
 
-<div class="section">
+        <p>
+            この3日間の旅は、私にとって非常に思い出深く、決して忘れることのできない大切な経験となりました。
+        </p>
 
-<h2>感謝</h2>
+        <p>
+            私はこの素晴らしい思い出を胸に刻み、これからの日本での生活や仕事の糧にしてまいりたいと思います。
+        </p>
 
-<p>
-まず初めに、この度は東京を観光する貴重な機会をくださいました会長に、心より感謝申し上げます。
-</p>
+        <p>
+            また、今回の旅を通して、東京の有名な場所を訪れるだけでなく、日本の文化や人々、そして街の雰囲気を実際に肌で感じることができました。
+        </p>
 
-<p>
-この3日間の旅は、私にとって非常に思い出深く、決して忘れることのできない大切な経験となりました。
-</p>
+        <p>
+            この経験は、日本で生活し働いていく中で、私自身をさらに成長させてくれる貴重な財産になると感じています。
+        </p>
+    </div>
 
-<p>
-私はこの素晴らしい思い出を胸に刻み、これからの日本での生活や仕事の糧にしてまいりたいと思います。
-</p>
+    <div class="section">
+        <h2>1日目：浅草（5月5日）</h2>
 
-</div>
+        <p>
+            初日は、日本の伝統的な風情が色濃く残る街、浅草を訪れました。
+            都会の喧騒から離れたこの場所では、まるで時間がゆっくりと流れているかのような穏やかな空気を感じることができました。
+        </p>
 
-<div class="section">
+        <p>
+            私が浅草に強く惹かれた理由は、古き良き日本の文化を肌で感じられる点にあります。
+            この体験を通じて、日本の歴史の深さを再発見することができました。
+        </p>
+        <!-- Asakusa -->
+        <img src="images/image003.jpg" alt="">
+        <h3>昼ご飯</h3>
 
-<h2>1日目：浅草（5月5日）</h2>
+        <p>
+            出発する前に、私は昼食をとるために「日高屋」に立ち寄りました。
+            そこで、昔ながらのラーメンと餃子を注文しました。
+        </p>
+        <!-- hidakaya store -->
+        <img src="images/image004.jpg" alt="">
+        <p>
+            温かいラーメンと香ばしい餃子はとても美味しく、これから始まる旅への期待をさらに高めてくれました。
+        </p>
+        <table>
+            <tr>
+                <th>料理</th>
+                <td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
+            </tr>
 
-<p>
-初日は、日本の伝統的な風情が色濃く残る街、浅草を訪れました。
-</p>
+            <tr>
+                <th>料金</th>
+                <td>1430円</td>
+            </tr>
 
-<img src="images/image003.jpg" alt="Asakusa">
+            <tr>
+                <th>場所</th>
+                <td>日高屋 稲荷町店</td>
+            </tr>
+        </table>
 
-<h3>昼ご飯</h3>
+        <p>
+            効率的に観光するため、東京メトロの700円一日乗車券を購入しました。
+        </p>
+        <img src="images/image007.jpg" alt="">
 
-<p>
-出発する前に、私は昼食をとるために「日高屋」に立ち寄りました。
-</p>
+        <p>
+            浅草寺へ向かう途中、観音通りを通りました。
+            伝統的な提灯や観光客で賑わう景色がとても印象的でした。
+        </p>
+        <img src="images/image008.jpg" alt="">
 
-<img src="images/image004.jpg" alt="Hidakaya">
+        <p>
+            周囲の景色を眺めながら歩いていると、自分が本当に日本の伝統文化の中に溶け込んでいるような気持ちになりました。
+        </p>
+        <img src="images/image009.jpg" alt="">
+        <img src="images/image010.jpg" alt="">
+        <p>
+            周辺を散策した後、私は浅草を代表する雷門へ向かいました。
+            大きな赤い提灯と多くの観光客で賑わう景色は、とても浅草らしい活気ある雰囲気を感じさせました。
+        </p>
+        <img src="images/image011.jpg" alt="">
+        <p>
+            続いて訪れた「浅草寺」では、歴史ある建築の美しさと、賑わいの中にある厳かな雰囲気に深い感銘を受けました。
+        </p>
+        <img src="images/image012.jpg" alt="">
+        <img src="images/image013.jpg" alt="">
+        <p>
+            人力車の姿を見て、私は昔の日本の風景を思い浮かべました。
+            現代的な東京の中でも、人力車の存在は浅草の伝統的で歴史ある雰囲気をより強く感じさせてくれました。
+        </p>
+        <img src="images/image017.jpg" alt="">
+        <p>
+            私はお寺でおみくじを引いてみました。
+            100円を入れておみくじを引いたところ、結果は凶でした。
+        </p>
+        <img src="images/image018.jpg" alt="">
+        <p>
+            私はお店でたこ焼きを作る様子を見ることができました。
+            熱々のたこ焼きが手際よく丸く焼き上げられていく様子は、とても印象的でした。
+        </p>
+        <img src="images/image020.jpg" alt="">
+        <img src="images/image021.jpg" alt="">
+        <h3>晩ご飯</h3>
 
-<div class="small-image">
-<img src="images/image005.jpg" alt="Ramen">
-</div>
+        <p>
+            一蘭での体験は、外国人観光客やあまり会話が得意ではない人にとって、とても素晴らしいものだと感じました。
+        </p>
+        <img src="images/image023.jpg" alt="">
+        <p>
+            食券機で注文をして、席に座り、料理が来るのを待つだけなので、とても簡単で便利でした。
+        </p>
+        <img src="images/image024.jpg" alt="">
+        <table>
+            <tr>
+                <th>料理</th>
+                <td>一蘭5選 + 抹茶アーモンドプリン</td>
+            </tr>
 
-<table>
+            <tr>
+                <th>料金</th>
+                <td>2580円</td>
+            </tr>
 
-<tr>
-<th>料理</th>
-<td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
-</tr>
+            <tr>
+                <th>場所</th>
+                <td>ICHIRAN Ueno</td>
+            </tr>
+        </table>
 
-<tr>
-<th>料金</th>
-<td>1430円</td>
-</tr>
+    </div>
 
-<tr>
-<th>場所</th>
-<td>日高屋 稲荷町店</td>
-</tr>
+    <div class="section">
+        <h2>2日目：新宿・渋谷（5月6日）</h2>
 
-</table>
+        <p>
+            2日目、私は新宿と渋谷を訪れました。
+            浅草の伝統的な雰囲気とは異なり、ここでは高層ビルや巨大な広告モニター、多くの人々で溢れる東京らしい現代的な景色を感じることができました。
+        </p>
+        <img src="images/image029.jpg" alt="">
+        <p>
+            渋谷駅を出た瞬間、多くの人々や巨大な広告モニターが目に入り、東京の賑やかさに圧倒されました。
+        </p>
+        <img src="images/image031.jpg" alt="">
+        <p>
+            渋谷で最初に訪れた場所の一つは、有名なハチ公像でした。
+        </p>
+        <img src="images/image032.jpg" alt="">
+        <p>
+            ハチ公の忠誠心に関する話を知っていたので、この場所は単なる観光地ではなく、とても特別な意味を持つ場所だと感じました。
+        </p>
+        <img src="images/image040.jpg" alt="">
+        <p>
+            その後、副都心線を利用して新宿へ向かいました。
+            東京の電車路線はとても複雑ですが、有名なエリア同士の移動は便利で、とてもスムーズでした。
+        </p>
 
-<p>
-浅草寺へ向かう途中、観音通りを通りました。
-</p>
+    </div>
 
-<img src="images/image008.jpg" alt="Kannon Street">
+    <div class="section">
+        <h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
 
-<img src="images/image011.jpg" alt="Kaminarimon">
+        <p>
+            最終日は、趣の異なる二つの街を訪れました。
+        </p>
 
-<img src="images/image012.jpg" alt="Sensoji">
+        <p>
+            活気あふれる秋葉原では、ネオンや広告が並ぶ日本の現代文化を体感しました。
+        </p>
+        <p>
+            一方で青山一丁目では、洗練されたオフィス街が広がる落ち着いた都会の空気を感じることができました。
+        </p>
+        <img src="images/image042.jpg" alt="">
+        <p>
+            青山散策の合間に「ブルーボトルコーヒー」を訪れました。
+            木の温もりと青いロゴが印象的なミニマルな空間は、都会の喧騒を忘れさせてくれる落ち着いた場所でした。
+        </p>
+        <img src="images/image047.jpg" alt="">
+        <p>
+            秋葉原では「快活CLUB」を体験しました。
+            豊富なマンガやドリンクバー、ソフトクリーム食べ放題など、非常に快適な空間でした。
+        </p>
+        <img src="images/image048.jpg" alt="">
+        <p>
+            上野公園では穏やかな午後の空気を楽しみました。
+            歩き疲れた後に飲んだ冷たいコーラは、とても美味しかったです。
+        </p>
+        <img src="images/image051.jpg" alt="">
+    </div>
 
-<p>
-私はお寺でおみくじを引いてみました。
-</p>
-
-<div class="portrait">
-<img src="images/image018.jpg" alt="Omikuji">
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>2日目：新宿・渋谷（5月6日）</h2>
-
-<p>
-2日目、私は新宿と渋谷を訪れました。
-</p>
-
-<img src="images/image029.jpg" alt="Shibuya">
-
-<img src="images/image031.jpg" alt="Tokyo">
-
-<img src="images/image032.jpg" alt="Hachiko">
-
-<p>
-東京の賑やかさに圧倒されました。
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
-
-<p>
-最終日は、趣の異なる二つの街を訪れました。
-</p>
-
-<img src="images/image042.jpg" alt="Aoyama">
-
-<img src="images/image047.jpg" alt="Blue Bottle Coffee">
-
-<img src="images/image048.jpg" alt="Akihabara">
-
-<img src="images/image051.jpg" alt="Ueno Park">
-
-</div>
-
-<div class="section">
+    <div class="section">
         <h2>3日間の総費用</h2>
 
-        <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <table border="1" cellspacing="0" cellpadding="8"
+            style="border-collapse: collapse; width: 100%; text-align: center;">
             <thead>
                 <tr>
                     <th>日付</th>
@@ -517,44 +574,27 @@ The report includes Asakusa, Shinjuku, Shibuya and Akihabara sightseeing experie
 
     </div>
 
-<div class="section">
+    <div class="section">
 
-<h2>結び</h2>
+        <h2>結び</h2>
 
-<p>
-今回の3日間の東京旅行は、私にとって一生忘れることのできない素晴らしい経験となりました。
-</p>
+        <p>
+            今回の3日間の東京旅行は、私にとって一生忘れることのできない素晴らしい経験となりました。
+        </p>
 
-<p>
-浅草の伝統から新宿・渋谷の現代的な活気まで、東京の多角的な魅力を深く知ることができました。
-</p>
+        <p>
+            浅草の伝統から新宿・渋谷の現代的な活気まで、東京の多角的な魅力を深く知ることができました。
+        </p>
 
-<p>
-このような貴重な機会をくださった会長に心より感謝申し上げます。
-</p>
+        <p>
+            このような貴重な機会をくださった会長に心より感謝申し上げます。
+        </p>
 
-<p>
-この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
-</p>
-
-</div>
-
-<div class="footer">
-
-<p>
-Tokyo Travel Report by Nguyễn Trọng Hiền
-</p>
-
-<p>
-Tokyo sightseeing experience in Japan.
-</p>
-
-<p>
-東京旅行レポート・日本文化・浅草・渋谷・新宿・秋葉原
-</p>
-
-</div>
+        <p>
+            この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
+        </p>
+    </div>
 
 </body>
+
 </html>
-```
