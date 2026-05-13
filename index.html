@@ -30,6 +30,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
         #password-screen {
 
             position: fixed;
@@ -585,12 +591,58 @@
     </div>
     <script>
 
+        /* =========================
+           PASSWORD
+        ========================== */
+
+        function checkPassword() {
+
+            const password =
+                document.getElementById("password-input").value;
+
+            if (password === "tokyo2026") {
+
+                sessionStorage.setItem("tokyo_access", "granted");
+
+                document.getElementById("password-screen")
+                    .style.display = "none";
+
+                document.getElementById("protected-content")
+                    .style.display = "block";
+
+            } else {
+
+                document.getElementById("error-message")
+                    .innerText = "パスワードが違います";
+            }
+        }
+
+        window.onload = function () {
+
+            if (sessionStorage.getItem("tokyo_access") === "granted") {
+
+                document.getElementById("password-screen")
+                    .style.display = "none";
+
+                document.getElementById("protected-content")
+                    .style.display = "block";
+            }
+        };
+
+
+
+        /* =========================
+           TOP BUTTON
+        ========================== */
+
         const topBtn = document.getElementById("topBtn");
 
         window.onscroll = function () {
 
-            if (document.body.scrollTop > 300 ||
-                document.documentElement.scrollTop > 300) {
+            if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+            ) {
 
                 topBtn.style.display = "flex";
 
@@ -608,57 +660,119 @@
             });
         }
 
-    </script>
-    <script>
 
-        function checkPassword() {
 
-            const password =
-                document.getElementById("password-input").value;
-
-            if (password === "tokyo2026") {
-
-                document.getElementById("password-screen")
-                    .style.display = "none";
-
-                document.getElementById("protected-content")
-                    .style.display = "block";
-
-            } else {
-
-                document.getElementById("error-message")
-                    .innerText = "パスワードが違います";
-            }
-        }
-
-    </script>
-    <script>
-
-        /* RIGHT CLICK */
+        /* =========================
+           DISABLE RIGHT CLICK
+        ========================== */
 
         document.addEventListener("contextmenu", function (e) {
 
             e.preventDefault();
-
         });
 
-        /* F12 + DEVTOOLS SHORTCUT */
+
+
+        /* =========================
+           BLOCK SHORTCUTS
+        ========================== */
 
         document.addEventListener("keydown", function (e) {
 
             if (
+
                 e.key === "F12" ||
 
                 (e.ctrlKey && e.shiftKey && e.key === "I") ||
 
                 (e.ctrlKey && e.shiftKey && e.key === "J") ||
 
-                (e.ctrlKey && e.key === "U")
+                (e.ctrlKey && e.shiftKey && e.key === "C") ||
+
+                (e.ctrlKey && e.key === "U") ||
+
+                (e.ctrlKey && e.key === "S") ||
+
+                (e.ctrlKey && e.key === "P")
+
             ) {
 
                 e.preventDefault();
+
+                return false;
             }
         });
+
+
+
+        /* =========================
+           DEVTOOLS DETECT
+        ========================== */
+
+        setInterval(function () {
+
+            const devtoolsOpen =
+                window.outerWidth - window.innerWidth > 160 ||
+                window.outerHeight - window.innerHeight > 160;
+
+            if (devtoolsOpen) {
+
+                document.body.innerHTML = `
+            
+            <div style="
+                height:100vh;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background:#111;
+                color:white;
+                font-size:28px;
+                font-family:sans-serif;
+                text-align:center;
+                padding:30px;
+            ">
+                Developer Tools Detected<br>
+                Access Blocked
+            </div>
+            
+            `;
+            }
+
+        }, 1000);
+
+
+
+        /* =========================
+           DISABLE TEXT SELECTION
+        ========================== */
+
+        document.addEventListener("selectstart", function (e) {
+
+            e.preventDefault();
+        });
+
+
+
+        /* =========================
+           DISABLE DRAG IMAGE
+        ========================== */
+
+        document.addEventListener("dragstart", function (e) {
+
+            e.preventDefault();
+        });
+
+
+
+        /* =========================
+           CLEAR CONSOLE
+        ========================== */
+
+        setInterval(function () {
+
+            console.clear();
+
+        }, 1000);
 
     </script>
 </body>
