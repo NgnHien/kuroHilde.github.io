@@ -9,243 +9,91 @@
         東京案内書 | Nguyễn Trọng Hiền Tokyo Travel Report
     </title>
 
-    <meta name="description" content="
-Nguyễn Trọng Hiền Tokyo travel report.
-Tokyo sightseeing in Asakusa, Shinjuku, Shibuya and Akihabara.
-">
+    <meta name="description"
+        content="Tokyo travel report by Nguyễn Trọng Hiền. Explore Asakusa, Shinjuku, Shibuya and Akihabara through a 3-day Tokyo sightseeing experience in Japan.">
 
-    <meta name="keywords" content="
-Nguyễn Trọng Hiền,
-Tokyo,
-Tokyo travel report,
-東京案内書,
-Asakusa,
-Shinjuku,
-Shibuya,
-Akihabara
-">
+    <meta name="keywords"
+        content="Nguyễn Trọng Hiền, Tokyo travel, Tokyo report, 東京案内書, Asakusa, Shinjuku, Shibuya, Akihabara, Japan travel, Tokyo sightseeing">
 
+    <meta property="og:title" content="東京案内書 | Nguyễn Trọng Hiền Tokyo Travel Report">
+
+    <meta property="og:description"
+        content="3-day Tokyo travel report featuring Asakusa, Shibuya, Shinjuku and Akihabara.">
+
+    <meta property="og:image" content="https://ngnhien.github.io/kuroHilde.github.io/images/image001.jpg">
+
+    <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            max-width: 920px;
-            margin: auto;
-            padding: 60px 24px;
-            line-height: 2.1;
-            font-size: 18px;
-            background: #f7f7f7;
-            color: #222;
-            font-family: 'Noto Serif JP', serif;
-        }
+        #topBtn {
 
-        .hero {
-            height: 520px;
-            border-radius: 24px;
-            overflow: hidden;
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-                url('images/image001.jpg');
+        position: fixed;
 
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 60px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
+        bottom: 30px;
+        right: 30px;
 
-        .overlay {
-            text-align: center;
-            color: white;
-        }
+        width: 58px;
+        height: 58px;
 
-        .overlay h1 {
-            font-size: 64px;
-            margin-bottom: 20px;
-            letter-spacing: 4px;
-            color: white;
-        }
+        border: none;
 
-        .date,
-        .author {
-            font-size: 20px;
-            margin: 8px 0;
-        }
+        border-radius: 50%;
 
-        h1 {
-            text-align: center;
-            font-size: 48px;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
+        background: #222;
 
-        h2 {
-            margin-top: 70px;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #222;
-            font-size: 30px;
-        }
+        color: white;
 
-        h3 {
-            margin-top: 40px;
-            font-size: 24px;
-        }
+        font-size: 26px;
 
-        .center {
-            text-align: center;
-            color: #666;
-        }
+        cursor: pointer;
 
-        .section {
-            background: white;
-            padding: 40px;
-            margin-top: 40px;
-            border-radius: 18px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        }
+        display: none;
 
-        p {
-            margin-bottom: 24px;
-            text-align: justify;
-        }
+        align-items: center;
+        justify-content: center;
 
-        ol {
-            padding-left: 25px;
-        }
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.18);
 
-        li {
-            margin-bottom: 14px;
-        }
+        transition: 0.3s;
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            overflow: hidden;
-            border-radius: 12px;
-        }
+        z-index: 9999;
+    }
 
-        th {
-            background: #222;
-            color: white;
-            padding: 14px;
-            text-align: left;
-            font-weight: 700;
-        }
+    #topBtn:hover {
 
-        td {
-            background: #fff;
-            padding: 14px;
-            border-bottom: 1px solid #ddd;
-        }
+        transform: translateY(-4px);
 
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 16px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        hr {
-            border: none;
-            height: 1px;
-            background: #ddd;
-            margin: 60px 0;
-        }
-
-        a {
-            color: #005bbb;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        @media screen and (max-width:768px) {
-
-            body {
-                padding: 25px 14px;
-                font-size: 16px;
-            }
-
-            h1 {
-                font-size: 34px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            .section {
-                padding: 24px;
-            }
-
-            table {
-                font-size: 14px;
-            }
-
-            img {
-                width: 100%;
-                border-radius: 18px;
-                margin-top: 24px;
-                margin-bottom: 24px;
-                display: block;
-                object-fit: cover;
-                transition: 0.3s;
-                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-            }
-
-            img:hover {
-                transform: scale(1.01);
-                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-            }
-
-            .center img:first-child {
-                width: 100%;
-                max-height: 520px;
-                object-fit: cover;
-            }
-
-            .center img:last-child {
-                width: 180px;
-                height: 180px;
-                object-fit: cover;
-                border-radius: 50%;
-                margin: auto;
-                border: 5px solid white;
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-            }
-
-            .portrait {
-                width: 60%;
-                margin: auto;
-            }
-
-            .avatar {
-                width: 500px;
-                height: 500px;
-
-                border-radius: 100%;
-            }
-
-        }
+        background: #444;
+    }
     </style>
-</head>
 
 <body>
+    <nav class="navbar">
+
+        <a href="#summary">概要</a>
+
+        <a href="#thanks">感謝</a>
+
+        <a href="#asakusa">浅草</a>
+
+        <a href="#shibuya">渋谷</a>
+
+        <a href="#shinjuku">新宿</a>
+
+        <a href="#aoyama-itchome">青山一丁目</a>
+
+        <a href="#akihabara">秋葉原</a>
+
+        <a href="#cost">総費用</a>
+
+        <a href="#ending">結び</a>
+    </nav>
 
     <div class="hero">
 
@@ -253,25 +101,30 @@ Akihabara
 
             <h1>東京案内書</h1>
 
-            <p class="date">2026年5月09日</p>
-
-            <p class="author">氏名：グエン・チョン・ヒエン</p>
-
-            <h2>
-                Nguyễn Trọng Hiền Tokyo Travel Report
-            </h2>
-
-            <p>
-                This website contains a Tokyo travel report by Nguyễn Trọng Hiền.
-                The report includes Asakusa, Shinjuku, Shibuya and Akihabara sightseeing experiences in Japan.
+            <p class="date">
+                2026年5月09日
             </p>
+
+            <p class="author">
+                氏名：グエン・チョン・ヒエン
+            </p>
+
+            <div class="hero-subtitle">
+                Nguyễn Trọng Hiền Tokyo Travel Report
+            </div>
+
+            <div class="hero-text">
+                A 3-day Tokyo sightseeing experience featuring
+                Asakusa, Shibuya, Shinjuku and Akihabara.
+            </div>
+
         </div>
 
     </div>
 
     <hr>
 
-    <div class="section">
+    <div class="section" id="summary">
         <h2>【要約・構成案】</h2>
 
         <ol>
@@ -281,7 +134,7 @@ Akihabara
         </ol>
     </div>
 
-    <div class="section">
+    <div class="section" id="thanks">
         <h2>感謝</h2>
 
         <p>
@@ -305,7 +158,7 @@ Akihabara
         </p>
     </div>
 
-    <div class="section">
+    <div class="section" id="asakusa">
         <h2>1日目：浅草（5月5日）</h2>
 
         <p>
@@ -418,14 +271,14 @@ Akihabara
 
     </div>
 
-    <div class="section">
+    <div class="section" >
         <h2>2日目：新宿・渋谷（5月6日）</h2>
 
         <p>
             2日目、私は新宿と渋谷を訪れました。
             浅草の伝統的な雰囲気とは異なり、ここでは高層ビルや巨大な広告モニター、多くの人々で溢れる東京らしい現代的な景色を感じることができました。
         </p>
-        <img src="images/image029.jpg" alt="">
+        <img src="images/image029.jpg" alt="" id="shibuya">
         <p>
             渋谷駅を出た瞬間、多くの人々や巨大な広告モニターが目に入り、東京の賑やかさに圧倒されました。
         </p>
@@ -437,7 +290,7 @@ Akihabara
         <p>
             ハチ公の忠誠心に関する話を知っていたので、この場所は単なる観光地ではなく、とても特別な意味を持つ場所だと感じました。
         </p>
-        <img src="images/image040.jpg" alt="">
+        <img src="images/image040.jpg" id="shinjuku" alt="">
         <p>
             その後、副都心線を利用して新宿へ向かいました。
             東京の電車路線はとても複雑ですが、有名なエリア同士の移動は便利で、とてもスムーズでした。
@@ -445,7 +298,7 @@ Akihabara
 
     </div>
 
-    <div class="section">
+    <div class="section" >
         <h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
 
         <p>
@@ -458,12 +311,12 @@ Akihabara
         <p>
             一方で青山一丁目では、洗練されたオフィス街が広がる落ち着いた都会の空気を感じることができました。
         </p>
-        <img src="images/image042.jpg" alt="">
+        <img src="images/image042.jpg" alt="" id="aoyama-itchome">
         <p>
             青山散策の合間に「ブルーボトルコーヒー」を訪れました。
             木の温もりと青いロゴが印象的なミニマルな空間は、都会の喧騒を忘れさせてくれる落ち着いた場所でした。
         </p>
-        <img src="images/image047.jpg" alt="">
+        <img src="images/image047.jpg" alt="" id="akihabara">
         <p>
             秋葉原では「快活CLUB」を体験しました。
             豊富なマンガやドリンクバー、ソフトクリーム食べ放題など、非常に快適な空間でした。
@@ -476,7 +329,7 @@ Akihabara
         <img src="images/image051.jpg" alt="">
     </div>
 
-    <div class="section">
+    <div class="section" id="cost">
         <h2>3日間の総費用</h2>
 
         <table border="1" cellspacing="0" cellpadding="8"
@@ -574,7 +427,7 @@ Akihabara
 
     </div>
 
-    <div class="section">
+    <div class="section" id="ending">
 
         <h2>結び</h2>
 
@@ -594,7 +447,36 @@ Akihabara
             この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
         </p>
     </div>
+<button id="topBtn" onclick="scrollToTop()">
+    ↑
+</button>
 
+<script>
+
+    const topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function () {
+
+        if (document.body.scrollTop > 300 ||
+            document.documentElement.scrollTop > 300) {
+
+            topBtn.style.display = "flex";
+
+        } else {
+
+            topBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+</script>
 </body>
 
 </html>
