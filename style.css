@@ -160,8 +160,6 @@ p {
 
 img{
 
-    width:85%;
-
     display:block;
 
     margin:32px auto;
@@ -172,6 +170,24 @@ img{
 
     box-shadow:
         0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* LARGE */
+
+.large-image{
+    width:100%;
+}
+
+/* MEDIUM */
+
+.medium-image{
+    width:80%;
+}
+
+/* SMALL */
+
+.small-image{
+    width:60%;
 }
 
 img:hover {
@@ -221,7 +237,17 @@ hr {
     background: #ddd;
     margin: 70px 0;
 }
+/* Footer */
+.footer{
 
+    margin-top:80px;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:13px;
+}
 /* MOBILE */
 
 @media screen and (max-width:768px) {
