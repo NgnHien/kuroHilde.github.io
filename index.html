@@ -30,6 +30,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        #password-screen {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100vh;
+
+            background: #111;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            z-index: 999999;
+        }
+
+        .password-box {
+
+            background: white;
+
+            padding: 50px;
+
+            border-radius: 24px;
+
+            text-align: center;
+
+            width: 340px;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .password-box h2 {
+
+            margin-bottom: 20px;
+        }
+
+        .password-box input {
+
+            width: 100%;
+
+            padding: 14px;
+
+            margin-top: 20px;
+
+            border-radius: 12px;
+
+            border: 1px solid #ccc;
+
+            font-size: 16px;
+        }
+
+        .password-box button {
+
+            width: 100%;
+
+            margin-top: 18px;
+
+            padding: 14px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background: #111;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+        #error-message {
+
+            color: red;
+
+            margin-top: 14px;
+        }
+
+        #protected-content {
+
+            display: none;
+        }
+
         #topBtn {
 
             position: fixed;
@@ -74,400 +163,426 @@
     </style>
 
 <body>
-    <nav class="navbar">
+    <div id="password-screen">
 
-        <a href="#summary">概要</a>
+        <div class="password-box">
 
-        <a href="#thanks">感謝</a>
+            <h2>閲覧制限</h2>
 
-        <a href="#asakusa">浅草</a>
-
-        <a href="#shibuya">渋谷</a>
-
-        <a href="#shinjuku">新宿</a>
-
-        <a href="#aoyama-itchome">青山一丁目</a>
-
-        <a href="#akihabara">秋葉原</a>
-
-        <a href="#cost">総費用</a>
-
-        <a href="#ending">結び</a>
-    </nav>
-
-    <div class="hero">
-
-        <div class="overlay">
-
-            <h1>東京案内書</h1>
-
-            <p class="date">
-                2026年5月09日
+            <p>
+                この案内書を閲覧するにはパスワードを入力してください。
             </p>
 
-            <p class="author">
-                氏名：グエン・チョン・ヒエン
-            </p>
+            <input type="password" id="password-input" placeholder="パスワード">
 
-            <div class="hero-subtitle">
-                Nguyễn Trọng Hiền Tokyo Travel Report
-            </div>
+            <button onclick="checkPassword()">
+                確認
+            </button>
 
-            <div class="hero-text">
-                A 3-day Tokyo sightseeing experience featuring
-                Asakusa, Shibuya, Shinjuku and Akihabara.
-            </div>
+            <p id="error-message"></p>
 
         </div>
 
     </div>
+    <div id="protected-content">
 
-    <hr>
 
-    <div class="section" id="summary">
-        <h2>【要約・構成案】</h2>
 
-        <ol>
-            <li>感謝の言葉</li>
-            <li>旅のハイライト</li>
-            <li>結びの言葉</li>
-        </ol>
-    </div>
 
-    <div class="section" id="thanks">
-        <h2>感謝</h2>
+        <nav class="navbar">
 
-        <p>
-            まず初めに、この度は東京を観光する貴重な機会をくださいました会長に、心より感謝申し上げます。
-        </p>
+            <a href="#summary">概要</a>
 
-        <p>
-            この3日間の旅は、私にとって非常に思い出深く、決して忘れることのできない大切な経験となりました。
-        </p>
+            <a href="#thanks">感謝</a>
 
-        <p>
-            私はこの素晴らしい思い出を胸に刻み、これからの日本での生活や仕事の糧にしてまいりたいと思います。
-        </p>
+            <a href="#asakusa">浅草</a>
 
-        <p>
-            また、今回の旅を通して、東京の有名な場所を訪れるだけでなく、日本の文化や人々、そして街の雰囲気を実際に肌で感じることができました。
-        </p>
+            <a href="#shibuya">渋谷</a>
 
-        <p>
-            この経験は、日本で生活し働いていく中で、私自身をさらに成長させてくれる貴重な財産になると感じています。
-        </p>
-    </div>
+            <a href="#shinjuku">新宿</a>
 
-    <div class="section" id="asakusa">
-        <h2>1日目：浅草（5月5日）</h2>
+            <a href="#aoyama-itchome">青山一丁目</a>
 
-        <p>
-            初日は、日本の伝統的な風情が色濃く残る街、浅草を訪れました。
-            都会の喧騒から離れたこの場所では、まるで時間がゆっくりと流れているかのような穏やかな空気を感じることができました。
-        </p>
+            <a href="#akihabara">秋葉原</a>
 
-        <p>
-            私が浅草に強く惹かれた理由は、古き良き日本の文化を肌で感じられる点にあります。
-            この体験を通じて、日本の歴史の深さを再発見することができました。
-        </p>
-        <!-- Asakusa -->
-        <img class="large-image" src="images/image003.jpg" alt="">
-        <h3>昼ご飯</h3>
+            <a href="#cost">総費用</a>
 
-        <p>
-            出発する前に、私は昼食をとるために「日高屋」に立ち寄りました。
-            そこで、昔ながらのラーメンと餃子を注文しました。
-        </p>
-        <!-- hidakaya store -->
-        <img class="medium-image" src="images/image004.jpg" alt="">
-        <p>
-            温かいラーメンと香ばしい餃子はとても美味しく、これから始まる旅への期待をさらに高めてくれました。
-        </p>
-        <div>
-            <img class="small-image" src="images/image005.jpg" alt="">
-            <img class="small-image" src="images/image006.jpg" alt="">
+            <a href="#ending">結び</a>
+        </nav>
+
+        <div class="hero">
+
+            <div class="overlay">
+
+                <h1>東京案内書</h1>
+
+                <p class="date">
+                    2026年5月09日
+                </p>
+
+                <p class="author">
+                    氏名：グエン・チョン・ヒエン
+                </p>
+
+                <div class="hero-subtitle">
+                    Nguyễn Trọng Hiền Tokyo Travel Report
+                </div>
+
+                <div class="hero-text">
+                    A 3-day Tokyo sightseeing experience featuring
+                    Asakusa, Shibuya, Shinjuku and Akihabara.
+                </div>
+
+            </div>
+
         </div>
 
-        <table>
-            <tr>
-                <th>料理</th>
-                <td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
-            </tr>
+        <hr>
 
-            <tr>
-                <th>料金</th>
-                <td>1430円</td>
-            </tr>
+        <div class="section" id="summary">
+            <h2>【要約・構成案】</h2>
 
-            <tr>
-                <th>場所</th>
-                <td>日高屋 稲荷町店</td>
-            </tr>
-        </table>
+            <ol>
+                <li>感謝の言葉</li>
+                <li>旅のハイライト</li>
+                <li>結びの言葉</li>
+            </ol>
+        </div>
 
-        <p>
-            効率的に観光するため、東京メトロの700円一日乗車券を購入しました。
-        </p>
-        <img class="medium-image" src="images/image007.jpg" alt="">
+        <div class="section" id="thanks">
+            <h2>感謝</h2>
 
-        <p>
-            浅草寺へ向かう途中、観音通りを通りました。
-            伝統的な提灯や観光客で賑わう景色がとても印象的でした。
-        </p>
-        <img class="medium-image" src="images/image008.jpg" alt="">
+            <p>
+                まず初めに、この度は東京を観光する貴重な機会をくださいました会長に、心より感謝申し上げます。
+            </p>
 
-        <p>
-            周囲の景色を眺めながら歩いていると、自分が本当に日本の伝統文化の中に溶け込んでいるような気持ちになりました。
-        </p>
-        <img class="medium-image" src="images/image009.jpg" alt="">
-        <img class="medium-image" src="images/image010.jpg" alt="">
-        <p>
-            周辺を散策した後、私は浅草を代表する雷門へ向かいました。
-            大きな赤い提灯と多くの観光客で賑わう景色は、とても浅草らしい活気ある雰囲気を感じさせました。
-        </p>
-        <img class="medium-image" src="images/image011.jpg" alt="">
-        <p>
-            続いて訪れた「浅草寺」では、歴史ある建築の美しさと、賑わいの中にある厳かな雰囲気に深い感銘を受けました。
-        </p>
-        <img class="medium-image" src="images/image012.jpg" alt="">
-        <img class="medium-image" src="images/image013.jpg" alt="">
-        <p>
-            人力車の姿を見て、私は昔の日本の風景を思い浮かべました。
-            現代的な東京の中でも、人力車の存在は浅草の伝統的で歴史ある雰囲気をより強く感じさせてくれました。
-        </p>
-        <img class="medium-image" src="images/image017.jpg" alt="">
-        <p>
-            私はお寺でおみくじを引いてみました。
-            100円を入れておみくじを引いたところ、結果は凶でした。
-        </p>
-        <img class="medium-image" src="images/image018.jpg" alt="">
-        <p>
-            私はお店でたこ焼きを作る様子を見ることができました。
-            熱々のたこ焼きが手際よく丸く焼き上げられていく様子は、とても印象的でした。
-        </p>
-        <img class="small-image" src="images/image020.jpg" alt="">
-        <img class="small-image" src="images/image021.jpg" alt="">
-        <h3>晩ご飯</h3>
+            <p>
+                この3日間の旅は、私にとって非常に思い出深く、決して忘れることのできない大切な経験となりました。
+            </p>
 
-        <p>
-            一蘭での体験は、外国人観光客やあまり会話が得意ではない人にとって、とても素晴らしいものだと感じました。
-        </p>
-        <img class="medium-image" src="images/image023.jpg" alt="">
-        <p>
-            食券機で注文をして、席に座り、料理が来るのを待つだけなので、とても簡単で便利でした。
-        </p>
-        <img class="small-image" src="images/image024.jpg" alt="">
-        <table>
-            <tr>
-                <th>料理</th>
-                <td>一蘭5選 + 抹茶アーモンドプリン</td>
-            </tr>
+            <p>
+                私はこの素晴らしい思い出を胸に刻み、これからの日本での生活や仕事の糧にしてまいりたいと思います。
+            </p>
 
-            <tr>
-                <th>料金</th>
-                <td>2580円</td>
-            </tr>
+            <p>
+                また、今回の旅を通して、東京の有名な場所を訪れるだけでなく、日本の文化や人々、そして街の雰囲気を実際に肌で感じることができました。
+            </p>
 
-            <tr>
-                <th>場所</th>
-                <td>ICHIRAN Ueno</td>
-            </tr>
-        </table>
+            <p>
+                この経験は、日本で生活し働いていく中で、私自身をさらに成長させてくれる貴重な財産になると感じています。
+            </p>
+        </div>
 
+        <div class="section" id="asakusa">
+            <h2>1日目：浅草（5月5日）</h2>
+
+            <p>
+                初日は、日本の伝統的な風情が色濃く残る街、浅草を訪れました。
+                都会の喧騒から離れたこの場所では、まるで時間がゆっくりと流れているかのような穏やかな空気を感じることができました。
+            </p>
+
+            <p>
+                私が浅草に強く惹かれた理由は、古き良き日本の文化を肌で感じられる点にあります。
+                この体験を通じて、日本の歴史の深さを再発見することができました。
+            </p>
+            <!-- Asakusa -->
+            <img class="large-image" src="images/image003.jpg" alt="">
+            <h3>昼ご飯</h3>
+
+            <p>
+                出発する前に、私は昼食をとるために「日高屋」に立ち寄りました。
+                そこで、昔ながらのラーメンと餃子を注文しました。
+            </p>
+            <!-- hidakaya store -->
+            <img class="medium-image" src="images/image004.jpg" alt="">
+            <p>
+                温かいラーメンと香ばしい餃子はとても美味しく、これから始まる旅への期待をさらに高めてくれました。
+            </p>
+            <div>
+                <img class="small-image" src="images/image005.jpg" alt="">
+                <img class="small-image" src="images/image006.jpg" alt="">
+            </div>
+
+            <table>
+                <tr>
+                    <th>料理</th>
+                    <td>中華そば ＋ 餃子6個 + ドラゴンチキン</td>
+                </tr>
+
+                <tr>
+                    <th>料金</th>
+                    <td>1430円</td>
+                </tr>
+
+                <tr>
+                    <th>場所</th>
+                    <td>日高屋 稲荷町店</td>
+                </tr>
+            </table>
+
+            <p>
+                効率的に観光するため、東京メトロの700円一日乗車券を購入しました。
+            </p>
+            <img class="medium-image" src="images/image007.jpg" alt="">
+
+            <p>
+                浅草寺へ向かう途中、観音通りを通りました。
+                伝統的な提灯や観光客で賑わう景色がとても印象的でした。
+            </p>
+            <img class="medium-image" src="images/image008.jpg" alt="">
+
+            <p>
+                周囲の景色を眺めながら歩いていると、自分が本当に日本の伝統文化の中に溶け込んでいるような気持ちになりました。
+            </p>
+            <img class="medium-image" src="images/image009.jpg" alt="">
+            <img class="medium-image" src="images/image010.jpg" alt="">
+            <p>
+                周辺を散策した後、私は浅草を代表する雷門へ向かいました。
+                大きな赤い提灯と多くの観光客で賑わう景色は、とても浅草らしい活気ある雰囲気を感じさせました。
+            </p>
+            <img class="medium-image" src="images/image011.jpg" alt="">
+            <p>
+                続いて訪れた「浅草寺」では、歴史ある建築の美しさと、賑わいの中にある厳かな雰囲気に深い感銘を受けました。
+            </p>
+            <img class="medium-image" src="images/image012.jpg" alt="">
+            <img class="medium-image" src="images/image013.jpg" alt="">
+            <p>
+                人力車の姿を見て、私は昔の日本の風景を思い浮かべました。
+                現代的な東京の中でも、人力車の存在は浅草の伝統的で歴史ある雰囲気をより強く感じさせてくれました。
+            </p>
+            <img class="medium-image" src="images/image017.jpg" alt="">
+            <p>
+                私はお寺でおみくじを引いてみました。
+                100円を入れておみくじを引いたところ、結果は凶でした。
+            </p>
+            <img class="medium-image" src="images/image018.jpg" alt="">
+            <p>
+                私はお店でたこ焼きを作る様子を見ることができました。
+                熱々のたこ焼きが手際よく丸く焼き上げられていく様子は、とても印象的でした。
+            </p>
+            <img class="small-image" src="images/image020.jpg" alt="">
+            <img class="small-image" src="images/image021.jpg" alt="">
+            <h3>晩ご飯</h3>
+
+            <p>
+                一蘭での体験は、外国人観光客やあまり会話が得意ではない人にとって、とても素晴らしいものだと感じました。
+            </p>
+            <img class="medium-image" src="images/image023.jpg" alt="">
+            <p>
+                食券機で注文をして、席に座り、料理が来るのを待つだけなので、とても簡単で便利でした。
+            </p>
+            <img class="small-image" src="images/image024.jpg" alt="">
+            <table>
+                <tr>
+                    <th>料理</th>
+                    <td>一蘭5選 + 抹茶アーモンドプリン</td>
+                </tr>
+
+                <tr>
+                    <th>料金</th>
+                    <td>2580円</td>
+                </tr>
+
+                <tr>
+                    <th>場所</th>
+                    <td>ICHIRAN Ueno</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="section" id="shibuya">
+            <h2>2日目：新宿・渋谷（5月6日）</h2>
+
+            <p>
+                2日目、私は新宿と渋谷を訪れました。
+                浅草の伝統的な雰囲気とは異なり、ここでは高層ビルや巨大な広告モニター、多くの人々で溢れる東京らしい現代的な景色を感じることができました。
+            </p>
+            <img class="medium-image" src="images/image029.jpg" alt="">
+            <p>
+                渋谷駅を出た瞬間、多くの人々や巨大な広告モニターが目に入り、東京の賑やかさに圧倒されました。
+            </p>
+            <img class="small-image" src="images/image031.jpg" alt="">
+            <p>
+                渋谷で最初に訪れた場所の一つは、有名なハチ公像でした。
+            </p>
+            <img class="small-image" src="images/image032.jpg" alt="">
+            <p>
+                ハチ公の忠誠心に関する話を知っていたので、この場所は単なる観光地ではなく、とても特別な意味を持つ場所だと感じました。
+            </p>
+            <img class="small-image" src="images/image040.jpg" id="shinjuku" alt="">
+            <p>
+                その後、副都心線を利用して新宿へ向かいました。
+                東京の電車路線はとても複雑ですが、有名なエリア同士の移動は便利で、とてもスムーズでした。
+            </p>
+
+        </div>
+
+        <div class="section">
+            <h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
+
+            <p>
+                最終日は、趣の異なる二つの街を訪れました。
+            </p>
+
+            <p>
+                活気あふれる秋葉原では、ネオンや広告が並ぶ日本の現代文化を体感しました。
+            </p>
+            <p>
+                一方で青山一丁目では、洗練されたオフィス街が広がる落ち着いた都会の空気を感じることができました。
+            </p>
+            <img class="small-image" src="images/image042.jpg" alt="" id="aoyama-itchome">
+            <p>
+                青山散策の合間に「ブルーボトルコーヒー」を訪れました。
+                木の温もりと青いロゴが印象的なミニマルな空間は、都会の喧騒を忘れさせてくれる落ち着いた場所でした。
+            </p>
+            <img class="small-image" src="images/image047.jpg" alt="" id="akihabara">
+            <p>
+                秋葉原では「快活CLUB」を体験しました。
+                豊富なマンガやドリンクバー、ソフトクリーム食べ放題など、非常に快適な空間でした。
+            </p>
+            <img class="small-image" src="images/image048.jpg" alt="">
+            <p>
+                上野公園では穏やかな午後の空気を楽しみました。
+                歩き疲れた後に飲んだ冷たいコーラは、とても美味しかったです。
+            </p>
+            <img class="small-image" src="images/image051.jpg" alt="">
+        </div>
+
+        <div class="section" id="cost">
+            <h2>3日間の総費用</h2>
+
+            <table border="1" cellspacing="0" cellpadding="8"
+                style="border-collapse: collapse; width: 100%; text-align: center;">
+                <thead>
+                    <tr>
+                        <th>日付</th>
+                        <th>項目</th>
+                        <th>詳細</th>
+                        <th>金額（円）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5月5日</td>
+                        <td>昼食</td>
+                        <td>日高屋（ラーメン＋餃子＋唐揚げ）</td>
+                        <td>1430</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>交通費</td>
+                        <td>東京メトロ1日乗車券</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>軽食</td>
+                        <td>たこ焼き</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>おみくじ</td>
+                        <td>おみくじ</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>夕食</td>
+                        <td>一蘭ラーメン</td>
+                        <td>2580</td>
+                    </tr>
+
+                    <tr>
+                        <td>6月5日</td>
+                        <td>朝食</td>
+                        <td>マルエツのお弁当（50％割引）</td>
+                        <td>214</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>夕食</td>
+                        <td>日高屋</td>
+                        <td>800</td>
+                    </tr>
+
+                    <tr>
+                        <td>7月5日</td>
+                        <td>昼食</td>
+                        <td>日高屋（中華丼）</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>飲み物</td>
+                        <td>Blue Bottle Coffee</td>
+                        <td>850</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>サービス</td>
+                        <td>快活グループ</td>
+                        <td>780</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>電車代</td>
+                        <td>神田 ⇒ 青山一丁目、青山一丁目 ⇒ 神田</td>
+                        <td>356</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>夕食</td>
+                        <td>吉野家</td>
+                        <td>762</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><strong>合計</strong></td>
+                        <td><strong>9972</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="section" id="ending">
+
+            <h2>結び</h2>
+
+            <p>
+                今回の3日間の東京旅行は、私にとって一生忘れることのできない素晴らしい経験となりました。
+            </p>
+
+            <p>
+                浅草の伝統から新宿・渋谷の現代的な活気まで、東京の多角的な魅力を深く知ることができました。
+            </p>
+
+            <p>
+                このような貴重な機会をくださった会長に心より感謝申し上げます。
+            </p>
+
+            <p>
+                この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
+            </p>
+        </div>
+        <footer class="footer">
+
+            <p>
+                © 2026 Nguyễn Trọng Hiền.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Tokyo Travel Report / 東京案内書
+            </p>
+
+        </footer>
+        <button id="topBtn" onclick="scrollToTop()">
+            ↑
+        </button>
     </div>
-
-    <div class="section" id="shibuya">
-        <h2>2日目：新宿・渋谷（5月6日）</h2>
-
-        <p>
-            2日目、私は新宿と渋谷を訪れました。
-            浅草の伝統的な雰囲気とは異なり、ここでは高層ビルや巨大な広告モニター、多くの人々で溢れる東京らしい現代的な景色を感じることができました。
-        </p>
-        <img class="medium-image" src="images/image029.jpg" alt="">
-        <p>
-            渋谷駅を出た瞬間、多くの人々や巨大な広告モニターが目に入り、東京の賑やかさに圧倒されました。
-        </p>
-        <img class="small-image" src="images/image031.jpg" alt="">
-        <p>
-            渋谷で最初に訪れた場所の一つは、有名なハチ公像でした。
-        </p>
-        <img class="small-image" src="images/image032.jpg" alt="">
-        <p>
-            ハチ公の忠誠心に関する話を知っていたので、この場所は単なる観光地ではなく、とても特別な意味を持つ場所だと感じました。
-        </p>
-        <img class="small-image" src="images/image040.jpg" id="shinjuku" alt="">
-        <p>
-            その後、副都心線を利用して新宿へ向かいました。
-            東京の電車路線はとても複雑ですが、有名なエリア同士の移動は便利で、とてもスムーズでした。
-        </p>
-
-    </div>
-
-    <div class="section">
-        <h2>3日目：青山一丁目・秋葉原（5月7日）</h2>
-
-        <p>
-            最終日は、趣の異なる二つの街を訪れました。
-        </p>
-
-        <p>
-            活気あふれる秋葉原では、ネオンや広告が並ぶ日本の現代文化を体感しました。
-        </p>
-        <p>
-            一方で青山一丁目では、洗練されたオフィス街が広がる落ち着いた都会の空気を感じることができました。
-        </p>
-        <img class="small-image" src="images/image042.jpg" alt="" id="aoyama-itchome">
-        <p>
-            青山散策の合間に「ブルーボトルコーヒー」を訪れました。
-            木の温もりと青いロゴが印象的なミニマルな空間は、都会の喧騒を忘れさせてくれる落ち着いた場所でした。
-        </p>
-        <img class="small-image" src="images/image047.jpg" alt="" id="akihabara">
-        <p>
-            秋葉原では「快活CLUB」を体験しました。
-            豊富なマンガやドリンクバー、ソフトクリーム食べ放題など、非常に快適な空間でした。
-        </p>
-        <img class="small-image" src="images/image048.jpg" alt="">
-        <p>
-            上野公園では穏やかな午後の空気を楽しみました。
-            歩き疲れた後に飲んだ冷たいコーラは、とても美味しかったです。
-        </p>
-        <img class="small-image" src="images/image051.jpg" alt="">
-    </div>
-
-    <div class="section" id="cost">
-        <h2>3日間の総費用</h2>
-
-        <table border="1" cellspacing="0" cellpadding="8"
-            style="border-collapse: collapse; width: 100%; text-align: center;">
-            <thead>
-                <tr>
-                    <th>日付</th>
-                    <th>項目</th>
-                    <th>詳細</th>
-                    <th>金額（円）</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>5月5日</td>
-                    <td>昼食</td>
-                    <td>日高屋（ラーメン＋餃子＋唐揚げ）</td>
-                    <td>1430</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>交通費</td>
-                    <td>東京メトロ1日乗車券</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>軽食</td>
-                    <td>たこ焼き</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>おみくじ</td>
-                    <td>おみくじ</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>夕食</td>
-                    <td>一蘭ラーメン</td>
-                    <td>2580</td>
-                </tr>
-
-                <tr>
-                    <td>6月5日</td>
-                    <td>朝食</td>
-                    <td>マルエツのお弁当（50％割引）</td>
-                    <td>214</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>夕食</td>
-                    <td>日高屋</td>
-                    <td>800</td>
-                </tr>
-
-                <tr>
-                    <td>7月5日</td>
-                    <td>昼食</td>
-                    <td>日高屋（中華丼）</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>飲み物</td>
-                    <td>Blue Bottle Coffee</td>
-                    <td>850</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>サービス</td>
-                    <td>快活グループ</td>
-                    <td>780</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>電車代</td>
-                    <td>神田 ⇒ 青山一丁目、青山一丁目 ⇒ 神田</td>
-                    <td>356</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>夕食</td>
-                    <td>吉野家</td>
-                    <td>762</td>
-                </tr>
-
-                <tr>
-                    <td colspan="3"><strong>合計</strong></td>
-                    <td><strong>9972</strong></td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
-
-    <div class="section" id="ending">
-
-        <h2>結び</h2>
-
-        <p>
-            今回の3日間の東京旅行は、私にとって一生忘れることのできない素晴らしい経験となりました。
-        </p>
-
-        <p>
-            浅草の伝統から新宿・渋谷の現代的な活気まで、東京の多角的な魅力を深く知ることができました。
-        </p>
-
-        <p>
-            このような貴重な機会をくださった会長に心より感謝申し上げます。
-        </p>
-
-        <p>
-            この思い出を糧に、これからも日本での仕事や生活に邁進してまいります。
-        </p>
-    </div>
-    <footer class="footer">
-
-        <p>
-            © 2026 Nguyễn Trọng Hiền.
-            All Rights Reserved.
-        </p>
-
-        <p>
-            Tokyo Travel Report / 東京案内書
-        </p>
-
-    </footer>
-    <button id="topBtn" onclick="scrollToTop()">
-        ↑
-    </button>
-
     <script>
 
         const topBtn = document.getElementById("topBtn");
@@ -491,6 +606,29 @@
                 top: 0,
                 behavior: "smooth"
             });
+        }
+
+    </script>
+    <script>
+
+        function checkPassword() {
+
+            const password =
+                document.getElementById("password-input").value;
+
+            if (password === "tokyo2026") {
+
+                document.getElementById("password-screen")
+                    .style.display = "none";
+
+                document.getElementById("protected-content")
+                    .style.display = "block";
+
+            } else {
+
+                document.getElementById("error-message")
+                    .innerText = "パスワードが違います";
+            }
         }
 
     </script>
